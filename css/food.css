@@ -1,0 +1,160 @@
+/* ============================================================
+   FOOD JOURNEY
+   Scoped entirely to #panel-food / .fd- prefixed classes.
+   Reuses the site's existing tokens (--ink, --paper, --brass,
+   --teal, --font-display, --font-body) — no new palette.
+
+   Orbit technique: .fd-orbit spins continuously (fd-spin). Each
+   .fd-orbit-item is placed at a fixed angle via a static
+   rotate()+translateX() (not animated). Its .fd-orbit-item-anchor
+   child carries a static counter-rotate(-angle) so the icon starts
+   upright. Its .fd-orbit-item-inner grandchild runs fd-spin-reverse
+   (same duration as the parent orbit, no per-item delay — every
+   instance starts in sync) to continuously cancel the orbit's
+   spin, so the icon stays upright throughout the whole rotation.
+   ============================================================ */
+
+.fd-head{ position:relative; z-index:3; text-align:center; margin-bottom:8px; }
+.fd-head h3{
+  font-family:var(--font-display); font-weight:600; font-size:clamp(24px,4vw,34px);
+  color:var(--paper-raised); letter-spacing:0.02em; margin-bottom:6px;
+}
+.fd-head p{ font-family:var(--font-body); color:var(--paper); opacity:0.72; font-size:14px; }
+
+.fd-stage{ padding-top:12px; }
+
+/* ---------- Orbit ---------- */
+.fd-orbit-wrap{
+  position:relative; width:100%; height:470px;
+  display:flex; align-items:center; justify-content:center;
+}
+@media (max-width:640px){ .fd-orbit-wrap{ height:auto; } }
+
+.fd-orbit{
+  --fd-duration:90s;
+  --fd-radius:180px;
+  position:relative; width:1px; height:1px;
+  animation:fd-spin var(--fd-duration) linear infinite;
+}
+.fd-orbit.paused, .fd-orbit.paused .fd-orbit-item-inner{ animation-play-state:paused; }
+
+@keyframes fd-spin{ to{ transform:rotate(360deg); } }
+@keyframes fd-spin-reverse{ from{ transform:rotate(0deg); } to{ transform:rotate(-360deg); } }
+
+.fd-orbit-item{
+  position:absolute; top:0; left:0; width:0; height:0;
+  transform:rotate(var(--fd-angle)) translateX(var(--fd-radius));
+}
+.fd-orbit-item-anchor{
+  position:absolute; top:-27px; left:-27px; width:54px; height:54px;
+  /* inline transform:rotate(calc(-1 * var(--fd-angle))) set per-item */
+}
+.fd-orbit-item-inner{
+  width:100%; height:100%;
+  animation:fd-spin-reverse var(--fd-duration) linear infinite;
+}
+
+.fd-orbit-center{
+  position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
+  font-family:var(--font-mono); font-size:11px; letter-spacing:0.18em;
+  color:var(--brass-soft); opacity:0.55; pointer-events:none;
+}
+@media (max-width:640px){ .fd-orbit-center{ display:none; } }
+
+.fd-icon-btn{
+  display:flex; flex-direction:column; align-items:center; gap:6px;
+  background:none; border:none; cursor:pointer; padding:6px; width:100%; height:100%;
+  color:var(--paper-raised);
+}
+.fd-icon-ring{
+  width:52px; height:52px; border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  background:rgba(242,238,227,0.06);
+  border:1px solid rgba(216,190,142,0.35);
+  box-shadow:0 0 0 rgba(176,141,87,0);
+  transition:box-shadow .3s ease, background .3s ease, border-color .3s ease, transform .3s ease;
+}
+.fd-icon-ring svg{ width:25px; height:25px; stroke:var(--brass-soft); fill:none; stroke-width:1.4; stroke-linecap:round; stroke-linejoin:round; }
+
+.fd-orbit-item.active .fd-icon-ring,
+.fd-icon-btn:focus-visible .fd-icon-ring{
+  background:rgba(47,110,98,0.18);
+  border-color:var(--teal-soft);
+  box-shadow:0 0 22px rgba(76,139,126,0.45);
+  transform:scale(1.14);
+}
+.fd-icon-btn:focus-visible{ outline:none; }
+.fd-orbit-item.dimmed .fd-icon-ring{ opacity:0.4; }
+
+.fd-icon-label{
+  font-family:var(--font-mono); font-size:10.5px; letter-spacing:0.04em;
+  color:var(--paper); opacity:0; transform:translateY(-2px);
+  transition:opacity .25s ease, transform .25s ease; white-space:nowrap;
+}
+.fd-orbit-item.active .fd-icon-label,
+.fd-icon-btn:focus-visible ~ .fd-icon-label{ opacity:0.95; transform:translateY(0); }
+.fd-orbit-item.dimmed .fd-icon-label{ opacity:0; }
+
+/* Mobile / reduced-motion: normal flow, wraps, no continuous spin */
+.fd-orbit-wrap.static-layout{ height:auto; }
+.fd-orbit-wrap.static-layout .fd-orbit{
+  position:static; width:auto; height:auto; animation:none;
+  display:flex; flex-wrap:wrap; justify-content:center; align-content:flex-start;
+  gap:20px 14px; padding:8px 4px 4px;
+}
+.fd-orbit-wrap.static-layout .fd-orbit-item{ position:static; transform:none; }
+.fd-orbit-wrap.static-layout .fd-orbit-item-anchor{ position:static; transform:none !important; }
+.fd-orbit-wrap.static-layout .fd-orbit-item-inner{ animation:none; }
+.fd-orbit-wrap.static-layout .fd-icon-btn{ padding:10px; }
+.fd-orbit-wrap.static-layout .fd-icon-label{ opacity:0.85; transform:none; position:static; margin-top:2px; }
+
+@media (prefers-reduced-motion: reduce){
+  .fd-orbit, .fd-orbit-item-inner{ animation:none; }
+}
+
+/* ---------- Carousel ---------- */
+.fd-carousel-area{ margin-top:20px; min-height:170px; }
+
+.fd-carousel-idle{
+  font-family:var(--font-mono); font-size:13px; color:var(--paper); opacity:0.6;
+  text-align:center; padding:36px 20px; border:1px dashed rgba(231,226,213,0.22); border-radius:var(--radius);
+}
+.fd-carousel-idle.fd-no-media strong{
+  display:block; font-family:var(--font-display); font-size:17px; color:var(--paper-raised);
+  opacity:1; margin-bottom:6px; font-weight:600;
+}
+
+.fd-carousel-title{
+  font-family:var(--font-mono); font-size:12px; letter-spacing:0.1em; text-transform:uppercase;
+  color:var(--brass-soft); text-align:center; margin-bottom:12px;
+}
+
+.fd-reel{ overflow:hidden; cursor:grab; touch-action:pan-y; }
+.fd-reel.dragging{ cursor:grabbing; }
+.fd-reel-content{ display:flex; width:max-content; will-change:transform; }
+
+.fd-media-card{
+  position:relative; flex:0 0 260px; aspect-ratio:4/3; margin-right:14px;
+  overflow:hidden; border-radius:var(--radius); background:var(--ink-soft);
+}
+@media (max-width:640px){ .fd-media-card{ flex-basis:210px; } }
+.fd-media-card:last-child{ margin-right:0; }
+
+.fd-media-el{ width:100%; height:100%; object-fit:cover; display:block; }
+img.fd-media-el{ -webkit-user-drag:none; user-select:none; pointer-events:none; }
+video.fd-media-el{ background:var(--ink); }
+
+.fd-media-overlay{
+  position:absolute; left:0; right:0; bottom:0; padding:10px 12px 8px;
+  background:linear-gradient(180deg, transparent, rgba(20,24,31,0.85) 78%);
+  display:flex; flex-direction:column; pointer-events:none;
+}
+.fd-media-place{ font-family:var(--font-display); font-size:13.5px; color:var(--paper-raised); }
+.fd-media-year{ font-family:var(--font-mono); font-size:10.5px; color:var(--brass-soft); margin-top:1px; }
+
+.fd-play-hint{
+  position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
+  pointer-events:none; transition:opacity .2s ease;
+}
+.fd-play-hint svg{ width:34px; height:34px; filter:drop-shadow(0 2px 6px rgba(0,0,0,0.5)); opacity:0.9; }
+.fd-media-card.playing .fd-play-hint{ opacity:0; }
