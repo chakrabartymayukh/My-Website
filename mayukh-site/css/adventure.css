@@ -1,0 +1,166 @@
+/* ============================================================
+   ADVENTURE SPACE
+   Scoped entirely to #panel-adventure / .adv- prefixed classes.
+   Reuses the site's existing tokens (--ink, --paper, --brass,
+   --teal, --font-display, --font-body) — no new palette.
+   ============================================================ */
+
+.adv-stage{
+  position:relative;
+  min-height:520px;
+  background:radial-gradient(120% 100% at 50% 0%, var(--ink-soft) 0%, var(--ink) 70%);
+  border:1px solid var(--line);
+  overflow:hidden;
+  padding:40px var(--edge) 32px;
+}
+@media (max-width:640px){ .adv-stage{ min-height:420px; padding:28px 16px 24px; } }
+
+.adv-head{ position:relative; z-index:3; text-align:center; margin-bottom:22px; }
+.adv-head h3{
+  font-family:var(--font-display); font-weight:600; font-size:clamp(24px,4vw,34px);
+  color:var(--paper-raised); letter-spacing:0.02em; margin-bottom:6px;
+}
+.adv-head p{ font-family:var(--font-body); color:var(--paper); opacity:0.72; font-size:14px; }
+
+.adv-subnav{
+  position:relative; z-index:3; display:flex; justify-content:center; gap:10px; margin-bottom:8px;
+}
+.adv-subnav button{
+  font-family:var(--font-mono); font-size:12px; letter-spacing:0.06em; text-transform:uppercase;
+  background:transparent; border:1px solid var(--line); color:var(--paper);
+  opacity:0.65; padding:9px 18px; cursor:pointer; transition:opacity .25s ease, border-color .25s ease, color .25s ease;
+}
+@media (max-width:640px){
+  .adv-subnav button{ padding:13px 16px; font-size:11.5px; }
+}
+.adv-subnav button.active{
+  opacity:1; color:var(--brass-soft); border-color:var(--brass);
+}
+.adv-subnav button:hover{ opacity:0.9; }
+.adv-subnav button:focus-visible{ outline:2px solid var(--teal-soft); outline-offset:2px; }
+
+.adv-canvas{
+  position:relative; width:100%; height:380px; z-index:2;
+}
+@media (max-width:640px){ .adv-canvas{ height:340px; } }
+
+/* Mobile / reduced-motion: normal document flow, wraps to as many rows
+   as needed instead of squeezing everything into a fixed-height canvas. */
+.adv-canvas.static-layout{
+  height:auto; min-height:0;
+  display:flex; flex-wrap:wrap; justify-content:center; align-content:flex-start;
+  gap:22px 16px; padding:6px 4px 10px;
+}
+.adv-canvas.static-layout .adv-icon{ position:static; transform:none !important; }
+.adv-canvas.static-layout .adv-icon-label{
+  opacity:0.85; transform:none; position:static; margin-top:2px;
+}
+
+/* Each icon is absolutely positioned and moved via JS-updated transform
+   (translate/rotate/scale) on this wrapper — kept to GPU-cheap properties. */
+.adv-icon{
+  position:absolute; top:0; left:0; will-change:transform;
+  transform:translate3d(0,0,0);
+}
+.adv-icon-btn{
+  display:flex; flex-direction:column; align-items:center; gap:6px;
+  background:none; border:none; cursor:pointer; padding:6px;
+  color:var(--paper-raised);
+}
+@media (max-width:640px){
+  .adv-icon-btn{ padding:10px; }
+}
+.adv-icon-ring{
+  width:52px; height:52px; border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  background:rgba(242,238,227,0.06);
+  border:1px solid rgba(216,190,142,0.35);
+  box-shadow:0 0 0 rgba(176,141,87,0);
+  transition:box-shadow .3s ease, background .3s ease, border-color .3s ease, transform .3s ease;
+}
+.adv-icon-ring svg{ width:26px; height:26px; stroke:var(--brass-soft); fill:none; stroke-width:1.4; stroke-linecap:round; stroke-linejoin:round; }
+.adv-icon.hovered .adv-icon-ring,
+.adv-icon-btn:focus-visible .adv-icon-ring{
+  background:rgba(47,110,98,0.18);
+  border-color:var(--teal-soft);
+  box-shadow:0 0 22px rgba(76,139,126,0.45);
+  transform:scale(1.16);
+}
+.adv-icon-btn:focus-visible{ outline:none; }
+.adv-icon-label{
+  font-family:var(--font-mono); font-size:10.5px; letter-spacing:0.04em;
+  color:var(--paper); opacity:0; transform:translateY(-2px);
+  transition:opacity .25s ease, transform .25s ease; white-space:nowrap;
+}
+.adv-icon.hovered .adv-icon-label,
+.adv-icon-btn:focus-visible .adv-icon-label{ opacity:0.9; transform:translateY(0); }
+.adv-icon.dimmed .adv-icon-ring{ opacity:0.35; }
+.adv-icon.dimmed .adv-icon-label{ opacity:0; }
+
+.adv-icon.no-media .adv-icon-ring{ border-style:dashed; opacity:0.55; }
+
+/* ---------- Carousel overlay ---------- */
+.adv-overlay{
+  position:fixed; inset:0; z-index:900; display:none;
+  align-items:center; justify-content:center;
+  background:rgba(20,24,31,0.86); backdrop-filter:blur(6px);
+  opacity:0; transition:opacity .35s ease;
+}
+.adv-overlay.visible{ display:flex; opacity:1; }
+
+.adv-panel{
+  position:relative; width:min(760px,92vw); max-height:88vh;
+  background:var(--paper-raised); border:1px solid var(--line);
+  display:flex; flex-direction:column;
+  transform:scale(0.94); opacity:0; transition:transform .4s ease, opacity .4s ease;
+}
+.adv-overlay.visible .adv-panel{ transform:scale(1); opacity:1; }
+
+.adv-panel-close{
+  position:absolute; top:10px; right:10px; z-index:5;
+  width:34px; height:34px; border:1px solid var(--line); background:var(--paper);
+  color:var(--ink); font-size:16px; cursor:pointer; line-height:1;
+}
+.adv-panel-close:hover{ border-color:var(--rust); color:var(--rust); }
+
+.adv-media-wrap{
+  position:relative; width:100%; aspect-ratio:4/3; background:var(--ink);
+  display:flex; align-items:center; justify-content:center; overflow:hidden;
+}
+.adv-media-wrap img, .adv-media-wrap video{
+  width:100%; height:100%; object-fit:contain; display:block;
+}
+.adv-media-nav{
+  position:absolute; top:50%; transform:translateY(-50%);
+  width:38px; height:38px; border:1px solid rgba(231,226,213,0.4);
+  background:rgba(20,24,31,0.45); color:var(--paper-raised);
+  font-size:18px; cursor:pointer; display:flex; align-items:center; justify-content:center;
+  transition:background .2s ease;
+}
+@media (max-width:640px){
+  .adv-media-nav{ width:44px; height:44px; }
+  .adv-panel-close{ width:40px; height:40px; }
+}
+.adv-media-nav:hover{ background:rgba(20,24,31,0.75); }
+.adv-media-nav.prev{ left:10px; }
+.adv-media-nav.next{ right:10px; }
+.adv-media-nav[disabled]{ opacity:0.25; cursor:default; }
+
+.adv-panel-body{ padding:18px 24px 22px; }
+.adv-panel-title{ font-family:var(--font-display); font-weight:600; font-size:20px; color:var(--ink); }
+.adv-panel-caption{ font-family:var(--font-body); font-size:13px; color:var(--ink-soft); opacity:0.75; margin-top:4px; }
+.adv-panel-dots{ display:flex; gap:6px; justify-content:center; margin-top:14px; }
+.adv-panel-dots button{
+  width:7px; height:7px; border-radius:50%; border:none; background:var(--line); padding:0; cursor:pointer;
+}
+.adv-panel-dots button.active{ background:var(--brass); }
+
+.adv-empty-note{
+  font-family:var(--font-mono); font-size:13px; color:var(--ink-soft); opacity:0.7;
+  padding:40px 24px; text-align:center;
+}
+
+/* Reduced motion: icons still appear, just without continuous drift */
+@media (prefers-reduced-motion: reduce){
+  .adv-icon{ transition:none; }
+}
