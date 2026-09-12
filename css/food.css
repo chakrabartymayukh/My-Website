@@ -1,0 +1,193 @@
+/* ============================================================
+   FOOD JOURNEY
+   Scoped entirely to #panel-food / .fd- prefixed classes.
+   Reuses the site's existing tokens (--ink, --paper, --brass,
+   --teal, --font-display, --font-body) — no new palette.
+
+   Orbit technique: .fd-orbit spins continuously (fd-spin). Each
+   .fd-orbit-item is placed at a fixed angle via a static
+   rotate()+translateX() (not animated). Its .fd-orbit-item-anchor
+   child carries a static counter-rotate(-angle) so the icon starts
+   upright. Its .fd-orbit-item-inner grandchild runs fd-spin-reverse
+   (same duration as the parent orbit, no per-item delay — every
+   instance starts in sync) to continuously cancel the orbit's
+   spin, so the icon stays upright throughout the whole rotation.
+   ============================================================ */
+
+.fd-head{ position:relative; z-index:3; text-align:center; margin-bottom:8px; }
+.fd-head h3{
+  font-family:var(--font-display); font-weight:600; font-size:clamp(24px,4vw,34px);
+  color:var(--paper-raised); letter-spacing:0.02em; margin-bottom:6px;
+}
+.fd-head p{ font-family:var(--font-body); color:var(--paper); opacity:0.72; font-size:14px; }
+
+.fd-stage{ padding-top:12px; }
+
+/* ---------- Orbit ---------- */
+.fd-orbit-wrap{
+  position:relative; width:100%; height:470px;
+  display:flex; align-items:center; justify-content:center;
+}
+@media (max-width:640px){ .fd-orbit-wrap{ height:auto; } }
+
+.fd-orbit{
+  --fd-duration:90s;
+  --fd-radius:180px;
+  position:relative; width:1px; height:1px;
+  animation:fd-spin var(--fd-duration) linear infinite;
+}
+.fd-orbit.paused, .fd-orbit.paused .fd-orbit-item-inner{ animation-play-state:paused; }
+
+@keyframes fd-spin{ to{ transform:rotate(360deg); } }
+@keyframes fd-spin-reverse{ from{ transform:rotate(0deg); } to{ transform:rotate(-360deg); } }
+
+.fd-orbit-item{
+  position:absolute; top:0; left:0; width:0; height:0;
+  transform:rotate(var(--fd-angle)) translateX(var(--fd-radius));
+}
+.fd-orbit-item-anchor{
+  position:absolute; top:-27px; left:-27px; width:54px; height:54px;
+  /* inline transform:rotate(calc(-1 * var(--fd-angle))) set per-item */
+}
+.fd-orbit-item-inner{
+  width:100%; height:100%;
+  animation:fd-spin-reverse var(--fd-duration) linear infinite;
+}
+
+.fd-orbit-center{
+  position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
+  font-family:var(--font-mono); font-size:11px; letter-spacing:0.18em;
+  color:var(--brass-soft); opacity:0.55; pointer-events:none;
+}
+@media (max-width:640px){ .fd-orbit-center{ display:none; } }
+
+.fd-icon-btn{
+  display:flex; flex-direction:column; align-items:center; gap:6px;
+  background:none; border:none; cursor:pointer; padding:6px; width:100%; height:100%;
+  color:var(--paper-raised);
+}
+.fd-icon-ring{
+  width:52px; height:52px; border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  background:rgba(242,238,227,0.06);
+  border:1px solid rgba(216,190,142,0.35);
+  box-shadow:0 0 0 rgba(176,141,87,0);
+  transition:box-shadow .3s ease, background .3s ease, border-color .3s ease, transform .3s ease;
+}
+.fd-icon-ring svg{ width:25px; height:25px; stroke:var(--brass-soft); fill:none; stroke-width:1.4; stroke-linecap:round; stroke-linejoin:round; }
+
+.fd-orbit-item.active .fd-icon-ring,
+.fd-icon-btn:focus-visible .fd-icon-ring{
+  background:rgba(47,110,98,0.18);
+  border-color:var(--teal-soft);
+  box-shadow:0 0 22px rgba(76,139,126,0.45);
+  transform:scale(1.14);
+}
+.fd-icon-btn:focus-visible{ outline:none; }
+.fd-orbit-item.dimmed .fd-icon-ring{ opacity:0.4; }
+
+.fd-icon-label{
+  font-family:var(--font-mono); font-size:10.5px; letter-spacing:0.04em;
+  color:var(--paper); opacity:0; transform:translateY(-2px);
+  transition:opacity .25s ease, transform .25s ease; white-space:nowrap;
+}
+.fd-orbit-item.active .fd-icon-label,
+.fd-icon-btn:focus-visible ~ .fd-icon-label{ opacity:0.95; transform:translateY(0); }
+.fd-orbit-item.dimmed .fd-icon-label{ opacity:0; }
+
+/* Mobile / reduced-motion: normal flow, wraps, no continuous spin */
+.fd-orbit-wrap.static-layout{ height:auto; }
+.fd-orbit-wrap.static-layout .fd-orbit{
+  position:static; width:auto; height:auto; animation:none;
+  display:flex; flex-wrap:wrap; justify-content:center; align-content:flex-start;
+  gap:20px 14px; padding:8px 4px 4px;
+}
+.fd-orbit-wrap.static-layout .fd-orbit-item{ position:static; width:auto; height:auto; transform:none; }
+.fd-orbit-wrap.static-layout .fd-orbit-item-anchor{ position:static; transform:none !important; }
+.fd-orbit-wrap.static-layout .fd-orbit-item-inner{ animation:none; }
+.fd-orbit-wrap.static-layout .fd-icon-btn{ padding:10px; }
+.fd-orbit-wrap.static-layout .fd-icon-label{ opacity:0.85; transform:none; position:static; margin-top:2px; }
+
+@media (prefers-reduced-motion: reduce){
+  .fd-orbit, .fd-orbit-item-inner{ animation:none; }
+}
+
+/* ---------- Filters ----------
+   Lives inside the popup carousel's panel body now (light
+   --paper-raised background, dark ink text) rather than the
+   dark Food section — colors are tuned for that context, but
+   selection language stays the same: teal = "selected", brass
+   = "available", matching the orbit ring's own selection cue. */
+.fd-filters{
+  position:relative; margin:2px 0 4px; padding:12px 14px 10px;
+  background:linear-gradient(165deg, rgba(176,141,87,0.1), rgba(201,194,174,0.22));
+  border:1px solid rgba(176,141,87,0.3);
+  border-top:2px solid var(--brass);
+  border-radius:var(--radius);
+  font-size:13px; display:flex; flex-direction:column; gap:10px;
+}
+
+.fd-filter-group{
+  display:flex; align-items:center; gap:10px; flex-wrap:wrap;
+}
+
+.fd-filter-label{
+  font-family:var(--font-mono); font-size:10.5px; letter-spacing:0.12em; text-transform:uppercase;
+  color:var(--brass); flex-shrink:0; width:38px;
+}
+
+.fd-filter-buttons{
+  display:flex; gap:7px; flex-wrap:wrap; align-items:center;
+}
+
+.fd-filter-btn{
+  display:inline-flex; align-items:center;
+  padding:5px 12px; font-size:12px; font-family:var(--font-mono); letter-spacing:0.02em;
+  border:1.5px solid rgba(176,141,87,0.45); color:var(--ink);
+  background:rgba(255,255,255,0.5); border-radius:var(--radius); cursor:pointer;
+  transition:transform .16s ease, box-shadow .22s ease, background .22s ease, border-color .22s ease;
+  white-space:nowrap;
+}
+.fd-filter-btn:hover{
+  transform:translateY(-2px);
+  background:rgba(255,255,255,0.85); border-color:var(--brass);
+  box-shadow:0 4px 12px rgba(176,141,87,0.3);
+}
+.fd-filter-btn:active{ transform:translateY(-2px) scale(0.95); }
+.fd-filter-btn:focus-visible{ outline:2px solid var(--teal); outline-offset:2px; }
+
+.fd-filter-btn.active{
+  background:var(--teal); border-color:var(--teal); color:var(--paper-raised); font-weight:600;
+  box-shadow:0 0 0 1px var(--teal-soft), 0 4px 14px rgba(47,110,98,0.4);
+}
+.fd-filter-btn.active:hover{ transform:translateY(-2px); background:var(--teal-soft); }
+
+.fd-filter-dot{
+  display:inline-block; width:0; height:6px; border-radius:50%; background:currentColor;
+  opacity:0; transform:scale(0); transition:all .18s ease; vertical-align:middle;
+}
+.fd-filter-btn.active .fd-filter-dot{ width:6px; opacity:1; transform:scale(1); margin-right:7px; }
+
+.fd-filter-status{
+  display:flex; align-items:center; justify-content:space-between; gap:12px;
+  padding-top:8px; border-top:1px solid rgba(20,24,31,0.1);
+}
+@media (max-width:640px){ .fd-filter-status{ flex-direction:column-reverse; align-items:stretch; gap:8px; } }
+
+.fd-filter-count{
+  font-family:var(--font-mono); font-size:11.5px; color:var(--teal); letter-spacing:0.03em;
+}
+
+.fd-filter-clear{
+  display:inline-flex; align-items:center; gap:5px;
+  padding:4px 11px; font-size:11px; font-family:var(--font-mono);
+  color:var(--rust); background:rgba(156,74,46,0.06); border:1.5px solid rgba(156,74,46,0.4);
+  border-radius:var(--radius); cursor:pointer;
+  transition:transform .16s ease, background .2s ease, border-color .2s ease, color .2s ease, box-shadow .22s ease;
+}
+.fd-filter-clear-icon{ font-size:14px; line-height:1; }
+.fd-filter-clear:hover{
+  background:var(--rust); color:var(--paper-raised); border-color:var(--rust);
+  box-shadow:0 6px 16px rgba(156,74,46,0.3); transform:translateY(-1px);
+}
+.fd-filter-clear:active{ transform:translateY(-1px) scale(0.95); }
