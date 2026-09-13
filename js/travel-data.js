@@ -8336,6 +8336,48 @@ const TRAVEL_DATA = {
       }]
     }
   ]
+},
+{
+  id: "j-diamond-harbor-2015",
+  title: "Diamond Harbor",
+  year: 2015,
+  startDate: "2015-06-07",
+  endDate: "2015-06-07",
+  description: "",
+  route: [
+    { latitude: 22.5726, longitude: 88.3639 },
+    { latitude: 22.1936, longitude: 88.1911 }
+  ],
+  coverImage: "assets/travel/diamond-harbor-ferry-2015-web.jpg",
+  destinations: [
+    {
+      id: "d-diamond-harbor-2015",
+      name: "Diamond Harbor",
+      city: "Diamond Harbor",
+      stateOrRegion: "West Bengal",
+      country: "India",
+      continent: "Asia",
+      latitude: 22.1936,
+      longitude: 88.1911,
+      visitDate: "2015-06-07",
+      description: "",
+      highlights: [],
+      images: ["assets/travel/diamond-harbor-ferry-2015-web.jpg"],
+      journeyId: "j-diamond-harbor-2015",
+      places: [{
+        id: "p-diamond-harbor-2015",
+        name: "Diamond Harbor",
+        latitude: 22.1936,
+        longitude: 88.1911,
+        description: "",
+        visitDate: "2015-06-07",
+        images: ["assets/travel/diamond-harbor-ferry-2015-web.jpg"],
+        highlights: [],
+        destinationId: "d-diamond-harbor-2015",
+        arrivalMode: "car"
+      }]
+    }
+  ]
 }
 ]
 };

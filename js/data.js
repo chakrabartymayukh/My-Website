@@ -661,7 +661,7 @@ const SITE_DATA = {
      Order here is the order icons appear around the circle. */
   foodCategories: [
     "Continental", "Bengali", "Chinese", "Mughlai", "Italian",
-    "Vietnamese", "Thai", "Street Foods", "Cafes", "Coffee", "Multicuisine", "Bhutanese"
+    "Vietnamese", "Thai", "Street Foods", "Cafes", "Coffee", "Multicuisine", "Bhutanese", "Boozing"
   ],
 
   /* Real photos/videos per category, keyed by category name. Empty until
@@ -689,6 +689,14 @@ const SITE_DATA = {
         year: 2015,
         meal: "lunch",
         alt: "Bengali thali with steamed rice, lentil dal, vegetable curry, and accompaniments"
+      },
+      {
+        type: "image",
+        src: "assets/food/bengali-sweets-platter-guchi-hyatt-regency.jpg",
+        place: "Guchi, Hyatt Regency, Kolkata",
+        year: 2015,
+        meal: "lunch",
+        alt: "Assorted Bengali sweets platter with sandesh, gulab jamun, pantua, rasgulla, and sponge sweets"
       }
     ],
     "Chinese": [
@@ -699,6 +707,14 @@ const SITE_DATA = {
         year: 2014,
         meal: "dinner",
         alt: "Chicken hot and sour soup with vegetables in tangy broth"
+      },
+      {
+        type: "image",
+        src: "assets/food/chilli-chicken-chowmein-silver-screen-asia.jpg",
+        place: "Silver Screen Asia, Sector 3, Salt Lake, Kolkata",
+        year: 2015,
+        meal: "dinner",
+        alt: "Chilli chicken in sweet-sour red sauce with chowmein and fried rice"
       }
     ],
     "Mughlai": [
@@ -735,6 +751,16 @@ const SITE_DATA = {
         year: 2015,
         meal: "lunch",
         alt: "Bhutanese beef stew with green chili, onion, and pineapple in creamy broth"
+      }
+    ],
+    "Boozing": [
+      {
+        type: "image",
+        src: "assets/food/whiskey-on-the-rocks-the-bar-hyatt-regency-kolkata.jpg",
+        place: "The Bar, Hyatt Regency, Kolkata",
+        year: 2015,
+        meal: "dinner",
+        alt: "Whiskey on the rocks with candlelight, alongside grilled paneer and tandoori appetizers"
       }
     ]
   },
