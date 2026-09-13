@@ -941,7 +941,7 @@ const WILDLIFE_DATA = {
       notes: ""
     },
     {
-      id: "w-peafowl-gorumara-2015",
+      id: "w-peafowl-jaldapara-2015",
       species: "Indian Peafowl",
       subject: "Peacock displaying plumage on forest path",
       location: {
@@ -957,13 +957,13 @@ const WILDLIFE_DATA = {
       time: "16:06:46",
       year: 2015,
       camera: "SONY DSC-HX200V",
-      images: ["assets/hobbies/wildlife-photography/peacock-gorumara-2015-web.jpg"],
+      images: ["assets/hobbies/wildlife-photography/peacock-jaldapara-2015-web.jpg"],
       description: "",
       highlights: [],
       notes: ""
     },
     {
-      id: "w-fish-eagle-gorumara-2015",
+      id: "w-fish-eagle-jaldapara-2015",
       species: "Pallas's Fish Eagle",
       subject: "Pallas's Fish Eagle perched on tree branch in misty forest",
       location: {
@@ -979,13 +979,13 @@ const WILDLIFE_DATA = {
       time: "16:16:09",
       year: 2015,
       camera: "SONY DSC-HX200V",
-      images: ["assets/hobbies/wildlife-photography/fish-eagle-gorumara-2015-web.jpg"],
+      images: ["assets/hobbies/wildlife-photography/fish-eagle-jaldapara-2015-web.jpg"],
       description: "",
       highlights: [],
       notes: ""
     },
     {
-      id: "w-sambar-gorumara-2015",
+      id: "w-sambar-jaldapara-2015",
       species: "Sambar",
       subject: "Sambar deer with impressive antlers grazing in grassland",
       location: {
@@ -1001,13 +1001,13 @@ const WILDLIFE_DATA = {
       time: "16:37:10",
       year: 2015,
       camera: "SONY DSC-HX200V",
-      images: ["assets/hobbies/wildlife-photography/sambar-gorumara-2015-web.jpg"],
+      images: ["assets/hobbies/wildlife-photography/sambar-jaldapara-2015-web.jpg"],
       description: "",
       highlights: [],
       notes: ""
     },
     {
-      id: "w-barking-deer-gorumara-2015",
+      id: "w-barking-deer-jaldapara-2015",
       species: "Barking Deer",
       subject: "Barking Deer walking through grassland near forest",
       location: {
@@ -1023,13 +1023,13 @@ const WILDLIFE_DATA = {
       time: "16:38:41",
       year: 2015,
       camera: "SONY DSC-HX200V",
-      images: ["assets/hobbies/wildlife-photography/barking-deer-gorumara-2015-web.jpg"],
+      images: ["assets/hobbies/wildlife-photography/barking-deer-jaldapara-2015-web.jpg"],
       description: "",
       highlights: [],
       notes: ""
     },
     {
-      id: "w-rhino-river-gorumara-2015",
+      id: "w-rhino-river-jaldapara-2015",
       species: "Rhinoceros",
       subject: "Indian one-horned rhinoceros wading in river",
       location: {
@@ -1045,13 +1045,13 @@ const WILDLIFE_DATA = {
       time: "16:52:01",
       year: 2015,
       camera: "SONY DSC-HX200V",
-      images: ["assets/hobbies/wildlife-photography/rhino-river-gorumara-2015-web.jpg"],
+      images: ["assets/hobbies/wildlife-photography/rhino-river-jaldapara-2015-web.jpg"],
       description: "",
       highlights: [],
       notes: ""
     },
     {
-      id: "w-gaur-gorumara-2015",
+      id: "w-gaur-jaldapara-2015",
       species: "Gaur",
       subject: "Gaur (Indian Bison) among trees in forest",
       location: {
@@ -1067,13 +1067,13 @@ const WILDLIFE_DATA = {
       time: "17:02:32",
       year: 2015,
       camera: "SONY DSC-HX200V",
-      images: ["assets/hobbies/wildlife-photography/gaur-gorumara-2015-web.jpg"],
+      images: ["assets/hobbies/wildlife-photography/gaur-jaldapara-2015-web.jpg"],
       description: "",
       highlights: [],
       notes: ""
     },
     {
-      id: "w-rhino-gorumara-2015",
+      id: "w-rhino-jaldapara-2015",
       species: "Rhinoceros",
       subject: "Rhino in grassland",
       location: {
@@ -1089,13 +1089,13 @@ const WILDLIFE_DATA = {
       time: "06:49:54",
       year: 2015,
       camera: "Nikon D60",
-      images: ["assets/hobbies/wildlife-photography/rhino-gorumara-2015-web.jpg"],
+      images: ["assets/hobbies/wildlife-photography/rhino-jaldapara-2015-web.jpg"],
       description: "",
       highlights: [],
       notes: ""
     },
     {
-      id: "w-stellers-eagle-gorumara-2015",
+      id: "w-stellers-eagle-jaldapara-2015",
       species: "Eagle",
       subject: "Steller's Sea Eagle on branch",
       location: {
@@ -1111,7 +1111,7 @@ const WILDLIFE_DATA = {
       time: "08:34:53",
       year: 2015,
       camera: "SONY DSC-HX200V",
-      images: ["assets/hobbies/wildlife-photography/stellers-eagle-gorumara-2015-web.jpg"],
+      images: ["assets/hobbies/wildlife-photography/stellers-eagle-jaldapara-2015-web.jpg"],
       description: "",
       highlights: [],
       notes: ""
