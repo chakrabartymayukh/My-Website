@@ -546,6 +546,20 @@ const SITE_DATA = {
       region: { continent: "Asia", country: "India", state: "West Bengal" },
       visitDate: "22 February 2015",
       photo: "assets/adventure/elephant-safari-jaldapara-national-park-web.jpg"
+    },
+    {
+      sport: "Jet Skiing",
+      place: "Mandarmani Beach",
+      region: { continent: "Asia", country: "India", state: "West Bengal" },
+      visitDate: "8 March 2015",
+      photo: "assets/adventure/jet-skiing-mandarmani-beach-web.jpg"
+    },
+    {
+      sport: "Parasailing",
+      place: "Mandarmani Beach",
+      region: { continent: "Asia", country: "India", state: "West Bengal" },
+      visitDate: "8 March 2015",
+      photo: "assets/adventure/parasailing-mandarmani-beach-web.jpg"
     }
   ],
 
@@ -632,6 +646,14 @@ const SITE_DATA = {
       region: { continent: "North America", country: "USA", state: "Connecticut" },
       visitDate: "2 April 2010",
       photo: "assets/toys/jeep-wrangler-web.jpg"
+    },
+    {
+      name: "Mahindra Thar CRDe",
+      type: "car",
+      place: "Mandarmani Beach",
+      region: { continent: "Asia", country: "India", state: "West Bengal" },
+      visitDate: "8 March 2015",
+      photo: "assets/toys/mahindra-thar-crde-mandarmani-web.jpg"
     }
   ],
 

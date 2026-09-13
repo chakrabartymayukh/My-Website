@@ -8292,6 +8292,50 @@ const TRAVEL_DATA = {
       }]
     }
   ]
+},
+{
+  id: "j-mandarmani-2015",
+  title: "Mandarmani Beach",
+  year: 2015,
+  startDate: "2015-03-07",
+  endDate: "2015-03-07",
+  description: "",
+  route: [
+    { latitude: 27.50, longitude: 84.33 },
+    { latitude: 27.70, longitude: 84.00 },
+    { latitude: 28.00, longitude: 83.70 },
+    { latitude: 28.21, longitude: 83.98 }
+  ],
+  coverImage: "assets/travel/mandarmani-parasailing-2015-web.jpg",
+  destinations: [
+    {
+      id: "d-mandarmani-beach-2015",
+      name: "Mandarmani Beach",
+      city: "Mandarmani",
+      stateOrRegion: "West Bengal",
+      country: "India",
+      continent: "Asia",
+      latitude: 21.63,
+      longitude: 87.27,
+      visitDate: "2015-03-07",
+      description: "",
+      highlights: [],
+      images: ["assets/travel/mandarmani-parasailing-2015-web.jpg"],
+      journeyId: "j-mandarmani-2015",
+      places: [{
+        id: "p-mandarmani-beach-2015",
+        name: "Mandarmani Beach",
+        latitude: 21.63,
+        longitude: 87.27,
+        description: "",
+        visitDate: "2015-03-07",
+        images: ["assets/travel/mandarmani-parasailing-2015-web.jpg"],
+        highlights: [],
+        destinationId: "d-mandarmani-beach-2015",
+        arrivalMode: "bus"
+      }]
+    }
+  ]
 }
 ]
 };
