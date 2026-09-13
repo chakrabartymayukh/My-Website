@@ -8292,7 +8292,7 @@ const TRAVEL_DATA = {
       }]
     }
   ]
-}    }
+}
   ]
 };
 
