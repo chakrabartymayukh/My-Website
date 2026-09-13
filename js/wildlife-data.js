@@ -945,7 +945,7 @@ const WILDLIFE_DATA = {
       species: "Indian Peafowl",
       subject: "Peacock displaying plumage on forest path",
       location: {
-        name: "Gorumara National Park",
+        name: "Jaldapara National Park",
         city: "Jalpaiguri",
         stateOrRegion: "West Bengal",
         country: "India",
@@ -967,7 +967,7 @@ const WILDLIFE_DATA = {
       species: "Pallas's Fish Eagle",
       subject: "Pallas's Fish Eagle perched on tree branch in misty forest",
       location: {
-        name: "Gorumara National Park",
+        name: "Jaldapara National Park",
         city: "Jalpaiguri",
         stateOrRegion: "West Bengal",
         country: "India",
@@ -989,7 +989,7 @@ const WILDLIFE_DATA = {
       species: "Sambar",
       subject: "Sambar deer with impressive antlers grazing in grassland",
       location: {
-        name: "Gorumara National Park",
+        name: "Jaldapara National Park",
         city: "Jalpaiguri",
         stateOrRegion: "West Bengal",
         country: "India",
@@ -1011,7 +1011,7 @@ const WILDLIFE_DATA = {
       species: "Barking Deer",
       subject: "Barking Deer walking through grassland near forest",
       location: {
-        name: "Gorumara National Park",
+        name: "Jaldapara National Park",
         city: "Jalpaiguri",
         stateOrRegion: "West Bengal",
         country: "India",
@@ -1033,7 +1033,7 @@ const WILDLIFE_DATA = {
       species: "Rhinoceros",
       subject: "Indian one-horned rhinoceros wading in river",
       location: {
-        name: "Gorumara National Park",
+        name: "Jaldapara National Park",
         city: "Jalpaiguri",
         stateOrRegion: "West Bengal",
         country: "India",
@@ -1055,7 +1055,7 @@ const WILDLIFE_DATA = {
       species: "Gaur",
       subject: "Gaur (Indian Bison) among trees in forest",
       location: {
-        name: "Gorumara National Park",
+        name: "Jaldapara National Park",
         city: "Jalpaiguri",
         stateOrRegion: "West Bengal",
         country: "India",
@@ -1077,13 +1077,13 @@ const WILDLIFE_DATA = {
       species: "Rhinoceros",
       subject: "Rhino in grassland",
       location: {
-        name: "Gorumara National Park",
-        city: "Jalpaiguri",
+        name: "Jaldapara National Park",
+        city: "Alipurduar",
         stateOrRegion: "West Bengal",
         country: "India",
         continent: "Asia",
-        latitude: 26.7,
-        longitude: 88.8
+        latitude: 26.643,
+        longitude: 89.293
       },
       visitDate: "2015-02-22",
       time: "06:49:54",
@@ -1099,7 +1099,7 @@ const WILDLIFE_DATA = {
       species: "Eagle",
       subject: "Steller's Sea Eagle on branch",
       location: {
-        name: "Gorumara National Park",
+        name: "Jaldapara National Park",
         city: "Jalpaiguri",
         stateOrRegion: "West Bengal",
         country: "India",

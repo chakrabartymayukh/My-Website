@@ -7880,7 +7880,7 @@ const TRAVEL_DATA = {
     },
     {
       id: "j-gorumara-national-park-2015",
-      title: "Gorumara National Park",
+      title: "Jaldapara National Park",
       year: 2015,
       startDate: "2015-02-22",
       endDate: "2015-02-22",
@@ -7892,7 +7892,7 @@ const TRAVEL_DATA = {
       destinations: [
         {
           id: "d-gorumara-observation-tower-2015",
-          name: "Gorumara National Park",
+          name: "Jaldapara National Park",
           city: "Jalpaiguri",
           stateOrRegion: "West Bengal",
           country: "India",
