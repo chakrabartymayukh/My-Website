@@ -532,6 +532,20 @@ const SITE_DATA = {
       region: { continent: "Asia", country: "India", state: "Odisha" },
       visitDate: "7 December 2014",
       photo: "assets/adventure/outdoor-activities/swimming/images/swimming-puri-beach-web.jpg"
+    },
+    {
+      sport: "Jeep Safari",
+      place: "Jaldapara National Park",
+      region: { continent: "Asia", country: "India", state: "West Bengal" },
+      visitDate: "21 February 2015",
+      photo: "assets/adventure/jeep-safari-jaldapara-national-park-web.jpg"
+    },
+    {
+      sport: "Elephant Safari",
+      place: "Jaldapara National Park",
+      region: { continent: "Asia", country: "India", state: "West Bengal" },
+      visitDate: "22 February 2015",
+      photo: "assets/adventure/elephant-safari-jaldapara-national-park-web.jpg"
     }
   ],
 
@@ -625,7 +639,7 @@ const SITE_DATA = {
      Order here is the order icons appear around the circle. */
   foodCategories: [
     "Continental", "Bengali", "Chinese", "Mughlai", "Italian",
-    "Vietnamese", "Thai", "Street Foods", "Cafes", "Coffee", "Multicuisine"
+    "Vietnamese", "Thai", "Street Foods", "Cafes", "Coffee", "Multicuisine", "Bhutanese"
   ],
 
   /* Real photos/videos per category, keyed by category name. Empty until
@@ -689,6 +703,16 @@ const SITE_DATA = {
         year: 2014,
         meal: "dinner",
         alt: "Tandoori meatballs, saffron cake, and assorted Indian desserts"
+      }
+    ],
+    "Bhutanese": [
+      {
+        type: "image",
+        src: "assets/food/bhutanese-beef-stew-hotel-peljorling.jpg",
+        place: "Hotel Peljorling, Phuntsholing, Bhutan",
+        year: 2015,
+        meal: "lunch",
+        alt: "Bhutanese beef stew with green chili, onion, and pineapple in creamy broth"
       }
     ]
   },
