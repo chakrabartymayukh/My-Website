@@ -7879,6 +7879,47 @@ const TRAVEL_DATA = {
       ]
     },
     {
+      id: "j-gorumara-national-park-2015",
+      title: "Gorumara National Park",
+      year: 2015,
+      startDate: "2015-02-22",
+      endDate: "2015-02-22",
+      description: "",
+      route: [
+        { latitude: 26.642476, longitude: 89.295970 }
+      ],
+      coverImage: "assets/travel/gorumara-observation-tower-2015-web.jpg",
+      destinations: [
+        {
+          id: "d-gorumara-observation-tower-2015",
+          name: "Gorumara National Park",
+          city: "Jalpaiguri",
+          stateOrRegion: "West Bengal",
+          country: "India",
+          continent: "Asia",
+          latitude: 26.642476,
+          longitude: 89.295970,
+          visitDate: "2015-02-22",
+          description: "Observation tower overlooking grassland and forest",
+          highlights: [],
+          images: ["assets/travel/gorumara-observation-tower-2015-web.jpg"],
+          journeyId: "j-gorumara-national-park-2015",
+          places: [{
+            id: "p-gorumara-observation-tower",
+            name: "Observation Tower",
+            latitude: 26.642476,
+            longitude: 89.295970,
+            description: "Observation tower overlooking grassland and forest",
+            visitDate: "2015-02-22",
+            images: ["assets/travel/gorumara-observation-tower-2015-web.jpg"],
+            highlights: [],
+            destinationId: "d-gorumara-observation-tower-2015",
+            arrivalMode: "car-with-driver"
+          }]
+        }
+      ]
+    },
+    {
       id: "j-alipore-zoo-2014",
       title: "Alipore Zoo",
       year: 2014,

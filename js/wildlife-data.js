@@ -939,6 +939,182 @@ const WILDLIFE_DATA = {
       description: "",
       highlights: [],
       notes: ""
+    },
+    {
+      id: "w-peafowl-gorumara-2015",
+      species: "Indian Peafowl",
+      subject: "Peacock displaying plumage on forest path",
+      location: {
+        name: "Gorumara National Park",
+        city: "Jalpaiguri",
+        stateOrRegion: "West Bengal",
+        country: "India",
+        continent: "Asia",
+        latitude: 26.653,
+        longitude: 89.311
+      },
+      visitDate: "2015-02-21",
+      time: "16:06:46",
+      year: 2015,
+      camera: "SONY DSC-HX200V",
+      images: ["assets/hobbies/wildlife-photography/peacock-gorumara-2015-web.jpg"],
+      description: "",
+      highlights: [],
+      notes: ""
+    },
+    {
+      id: "w-fish-eagle-gorumara-2015",
+      species: "Pallas's Fish Eagle",
+      subject: "Pallas's Fish Eagle perched on tree branch in misty forest",
+      location: {
+        name: "Gorumara National Park",
+        city: "Jalpaiguri",
+        stateOrRegion: "West Bengal",
+        country: "India",
+        continent: "Asia",
+        latitude: 26.659,
+        longitude: 89.315
+      },
+      visitDate: "2015-02-21",
+      time: "16:16:09",
+      year: 2015,
+      camera: "SONY DSC-HX200V",
+      images: ["assets/hobbies/wildlife-photography/fish-eagle-gorumara-2015-web.jpg"],
+      description: "",
+      highlights: [],
+      notes: ""
+    },
+    {
+      id: "w-sambar-gorumara-2015",
+      species: "Sambar",
+      subject: "Sambar deer with impressive antlers grazing in grassland",
+      location: {
+        name: "Gorumara National Park",
+        city: "Jalpaiguri",
+        stateOrRegion: "West Bengal",
+        country: "India",
+        continent: "Asia",
+        latitude: 26.653,
+        longitude: 89.311
+      },
+      visitDate: "2015-02-21",
+      time: "16:37:10",
+      year: 2015,
+      camera: "SONY DSC-HX200V",
+      images: ["assets/hobbies/wildlife-photography/sambar-gorumara-2015-web.jpg"],
+      description: "",
+      highlights: [],
+      notes: ""
+    },
+    {
+      id: "w-barking-deer-gorumara-2015",
+      species: "Barking Deer",
+      subject: "Barking Deer walking through grassland near forest",
+      location: {
+        name: "Gorumara National Park",
+        city: "Jalpaiguri",
+        stateOrRegion: "West Bengal",
+        country: "India",
+        continent: "Asia",
+        latitude: 26.651,
+        longitude: 89.309
+      },
+      visitDate: "2015-02-21",
+      time: "16:38:41",
+      year: 2015,
+      camera: "SONY DSC-HX200V",
+      images: ["assets/hobbies/wildlife-photography/barking-deer-gorumara-2015-web.jpg"],
+      description: "",
+      highlights: [],
+      notes: ""
+    },
+    {
+      id: "w-rhino-river-gorumara-2015",
+      species: "Rhinoceros",
+      subject: "Indian one-horned rhinoceros wading in river",
+      location: {
+        name: "Gorumara National Park",
+        city: "Jalpaiguri",
+        stateOrRegion: "West Bengal",
+        country: "India",
+        continent: "Asia",
+        latitude: 26.638,
+        longitude: 89.284
+      },
+      visitDate: "2015-02-21",
+      time: "16:52:01",
+      year: 2015,
+      camera: "SONY DSC-HX200V",
+      images: ["assets/hobbies/wildlife-photography/rhino-river-gorumara-2015-web.jpg"],
+      description: "",
+      highlights: [],
+      notes: ""
+    },
+    {
+      id: "w-gaur-gorumara-2015",
+      species: "Gaur",
+      subject: "Gaur (Indian Bison) among trees in forest",
+      location: {
+        name: "Gorumara National Park",
+        city: "Jalpaiguri",
+        stateOrRegion: "West Bengal",
+        country: "India",
+        continent: "Asia",
+        latitude: 26.639,
+        longitude: 89.285
+      },
+      visitDate: "2015-02-21",
+      time: "17:02:32",
+      year: 2015,
+      camera: "SONY DSC-HX200V",
+      images: ["assets/hobbies/wildlife-photography/gaur-gorumara-2015-web.jpg"],
+      description: "",
+      highlights: [],
+      notes: ""
+    },
+    {
+      id: "w-rhino-gorumara-2015",
+      species: "Rhinoceros",
+      subject: "Rhino in grassland",
+      location: {
+        name: "Gorumara National Park",
+        city: "Jalpaiguri",
+        stateOrRegion: "West Bengal",
+        country: "India",
+        continent: "Asia",
+        latitude: 26.7,
+        longitude: 88.8
+      },
+      visitDate: "2015-02-22",
+      time: "06:49:54",
+      year: 2015,
+      camera: "Nikon D60",
+      images: ["assets/hobbies/wildlife-photography/rhino-gorumara-2015-web.jpg"],
+      description: "",
+      highlights: [],
+      notes: ""
+    },
+    {
+      id: "w-stellers-eagle-gorumara-2015",
+      species: "Eagle",
+      subject: "Steller's Sea Eagle on branch",
+      location: {
+        name: "Gorumara National Park",
+        city: "Jalpaiguri",
+        stateOrRegion: "West Bengal",
+        country: "India",
+        continent: "Asia",
+        latitude: 26.643016,
+        longitude: 89.293291
+      },
+      visitDate: "2015-02-22",
+      time: "08:34:53",
+      year: 2015,
+      camera: "SONY DSC-HX200V",
+      images: ["assets/hobbies/wildlife-photography/stellers-eagle-gorumara-2015-web.jpg"],
+      description: "",
+      highlights: [],
+      notes: ""
     }
   ]
 };
