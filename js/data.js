@@ -199,7 +199,8 @@ const SITE_DATA = {
     { name: "Certified ScrumMaster (CSM)", issuer: "Scrum Alliance", year: "2012", scan: "assets/certifications-source/csm.jpg", logo: "assets/certifications/scrum-alliance.png" },
     { name: "ITIL Foundation", issuer: "APMG International", year: "2013", scan: "assets/certifications-source/itil.jpg", logo: "assets/certifications/apmg.png" },
     { name: "ISTQB", issuer: "International Software Testing Qualifications Board", year: "2015", scan: "assets/certifications-source/istqb.jpg", logo: "assets/certifications/istqb.png" },
-    { name: "Six Sigma Green Belt", issuer: "Indian Statistical Institute (ISI), Kolkata", year: "2017", scan: "assets/certifications-source/six-sigma.jpg", logo: "assets/certifications/isi-kolkata.png" }
+    { name: "Six Sigma Green Belt", issuer: "Indian Statistical Institute (ISI), Kolkata", year: "2017", scan: "assets/certifications-source/six-sigma.jpg", logo: "assets/certifications/isi-kolkata.png" },
+    { name: "Claude Certified Associate — Foundations", issuer: "Anthropic", year: "2026", scan: "assets/certifications-source/claude-certified-associate-foundations.jpg", logo: "assets/certifications/anthropic.png" }
   ],
 
   education: [
