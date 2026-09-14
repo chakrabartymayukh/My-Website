@@ -680,6 +680,14 @@ const SITE_DATA = {
         year: 2014,
         meal: "dinner",
         alt: "Breadsticks with creamy dip and decorative swirl"
+      },
+      {
+        type: "image",
+        src: "assets/food/continental-breakfast-spread-q33-quest-mall.jpg",
+        place: "Q33, Quest Mall, Kolkata",
+        year: 2015,
+        meal: "breakfast",
+        alt: "Continental breakfast spread with croissants, hash browns, toast, fresh fruit, hung curd, and watermelon juice"
       }
     ],
     "Bengali": [
@@ -698,6 +706,14 @@ const SITE_DATA = {
         year: 2015,
         meal: "lunch",
         alt: "Assorted Bengali sweets platter with sandesh, gulab jamun, pantua, rasgulla, and sponge sweets"
+      },
+      {
+        type: "image",
+        src: "assets/food/mutton-chicken-curry-rice-kose-kosa.jpg",
+        place: "Kose Kosa, FE Block, Salt Lake, Kolkata",
+        year: 2015,
+        meal: "dinner",
+        alt: "Bengali mutton and chicken curry with steamed rice, dal, and fried onions"
       }
     ],
     "Chinese": [
@@ -716,6 +732,14 @@ const SITE_DATA = {
         year: 2015,
         meal: "dinner",
         alt: "Chilli chicken in sweet-sour red sauce with chowmein and fried rice"
+      },
+      {
+        type: "image",
+        src: "assets/food/hot-sour-soup-don-giovannis.jpg",
+        place: "Don Giovanni's, CD Block, Salt Lake, Kolkata",
+        year: 2015,
+        meal: "dinner",
+        alt: "Hot and sour soup with shredded vegetables and noodles"
       }
     ],
     "Mughlai": [
@@ -726,13 +750,46 @@ const SITE_DATA = {
         year: 2014,
         meal: "lunch",
         alt: "Tandoori chicken and chicken pakora platter with onion and chili"
+      },
+      {
+        type: "image",
+        src: "assets/food/chelo-kabab-peter-cat.jpg",
+        place: "Peter Cat, Park Street, Kolkata",
+        year: 2015,
+        meal: "lunch",
+        alt: "Chelo kabab with minced meat seekh kabab, chicken skewers, rice, and fried egg"
+      },
+      {
+        type: "image",
+        src: "assets/food/matka-biryani-mutton-curry-naan-oudh-1590.jpg",
+        place: "Oudh 1590, Salt Lake, Kolkata",
+        year: 2015,
+        meal: "dinner",
+        alt: "Matka biryani with mutton curry, chicken curry, and tandoori naan"
       }
     ],
     "Italian": [],
     "Vietnamese": [],
     "Thai": [],
     "Street Foods": [],
-    "Cafes": [],
+    "Cafes": [
+      {
+        type: "image",
+        src: "assets/food/fried-chicken-chilli-chicken-mocktails-le-coffee-cream.jpg",
+        place: "Le Coffee Cream, EC Block, Salt Lake, Kolkata",
+        year: 2015,
+        meal: "dinner",
+        alt: "Crumb-fried chicken bites and chilli chicken with blue and green mocktails"
+      },
+      {
+        type: "image",
+        src: "assets/food/bruschetta-cream-cheese-au-bon-pain-park-street.jpg",
+        place: "Au Bon Pain, Park Street, Kolkata",
+        year: 2015,
+        meal: "breakfast",
+        alt: "Bruschetta with tomato, onion, olives, and cheese, alongside cream cheese on bread"
+      }
+    ],
     "Coffee": [],
     "Multicuisine": [
       {
@@ -742,6 +799,14 @@ const SITE_DATA = {
         year: 2014,
         meal: "dinner",
         alt: "Tandoori meatballs, saffron cake, and assorted Indian desserts"
+      },
+      {
+        type: "image",
+        src: "assets/food/tandoori-chicken-chilli-chicken-fritters-chai-break.jpg",
+        place: "Chai Break, Sector 5, Salt Lake, Kolkata",
+        year: 2015,
+        meal: "lunch",
+        alt: "Charred tandoori chicken with chilli chicken and assorted fritters"
       }
     ],
     "Bhutanese": [
@@ -762,6 +827,38 @@ const SITE_DATA = {
         year: 2015,
         meal: "dinner",
         alt: "Whiskey on the rocks with candlelight, alongside grilled paneer and tandoori appetizers"
+      },
+      {
+        type: "image",
+        src: "assets/food/beer-fried-chicken-cashews-golden-city.jpg",
+        place: "Golden City, FD Block, Salt Lake, Kolkata",
+        year: 2015,
+        meal: "dinner",
+        alt: "Beer with fried chicken drumsticks and roasted cashews"
+      },
+      {
+        type: "image",
+        src: "assets/food/whisky-garlic-pepper-chicken-silver-sand.jpg",
+        place: "Silver Sand, Salt Lake, Kolkata",
+        year: 2016,
+        meal: "dinner",
+        alt: "Whisky on the rocks with garlic pepper chicken"
+      },
+      {
+        type: "image",
+        src: "assets/food/kingfisher-draught-peanuts-trincus.jpg",
+        place: "Trincus, Park Street, Kolkata",
+        year: 2015,
+        meal: "lunch",
+        alt: "Kingfisher Draught beer mugs with roasted peanuts"
+      },
+      {
+        type: "image",
+        src: "assets/food/whisky-chicken-tikka-fritters-charcoal-grill.jpg",
+        place: "Charcoal Grill, Park Circus, Kolkata",
+        year: 2015,
+        meal: "dinner",
+        alt: "Whisky on the rocks with chicken tikka and fried fritters"
       }
     ]
   },
