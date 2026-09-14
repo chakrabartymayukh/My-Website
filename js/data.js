@@ -788,6 +788,14 @@ const SITE_DATA = {
         year: 2015,
         meal: "breakfast",
         alt: "Bruschetta with tomato, onion, olives, and cheese, alongside cream cheese on bread"
+      },
+      {
+        type: "image",
+        src: "assets/food/fried-egg-sausages-bakers-cafe-gangtok.jpg",
+        place: "Baker's Cafe, Gangtok, Sikkim",
+        year: 2015,
+        meal: "breakfast",
+        alt: "Fried egg and cheese omelette with grilled breakfast sausages"
       }
     ],
     "Coffee": [],
@@ -825,7 +833,7 @@ const SITE_DATA = {
         src: "assets/food/whiskey-on-the-rocks-the-bar-hyatt-regency-kolkata.jpg",
         place: "The Bar, Hyatt Regency, Kolkata",
         year: 2015,
-        meal: "dinner",
+        meal: "boozing",
         alt: "Whiskey on the rocks with candlelight, alongside grilled paneer and tandoori appetizers"
       },
       {
@@ -833,7 +841,7 @@ const SITE_DATA = {
         src: "assets/food/beer-fried-chicken-cashews-golden-city.jpg",
         place: "Golden City, FD Block, Salt Lake, Kolkata",
         year: 2015,
-        meal: "dinner",
+        meal: "boozing",
         alt: "Beer with fried chicken drumsticks and roasted cashews"
       },
       {
@@ -841,7 +849,7 @@ const SITE_DATA = {
         src: "assets/food/whisky-garlic-pepper-chicken-silver-sand.jpg",
         place: "Silver Sand, Salt Lake, Kolkata",
         year: 2016,
-        meal: "dinner",
+        meal: "boozing",
         alt: "Whisky on the rocks with garlic pepper chicken"
       },
       {
@@ -849,7 +857,7 @@ const SITE_DATA = {
         src: "assets/food/kingfisher-draught-peanuts-trincus.jpg",
         place: "Trincus, Park Street, Kolkata",
         year: 2015,
-        meal: "lunch",
+        meal: "boozing",
         alt: "Kingfisher Draught beer mugs with roasted peanuts"
       },
       {
@@ -857,8 +865,16 @@ const SITE_DATA = {
         src: "assets/food/whisky-chicken-tikka-fritters-charcoal-grill.jpg",
         place: "Charcoal Grill, Park Circus, Kolkata",
         year: 2015,
-        meal: "dinner",
+        meal: "boozing",
         alt: "Whisky on the rocks with chicken tikka and fried fritters"
+      },
+      {
+        type: "image",
+        src: "assets/food/beer-chili-potato-tikka-some-place-else.jpg",
+        place: "Some Place Else, The Park Hotel, Park Street, Kolkata",
+        year: 2015,
+        meal: "boozing",
+        alt: "Beer with chili potato and grilled paneer tikka"
       }
     ]
   },
