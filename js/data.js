@@ -688,6 +688,14 @@ const SITE_DATA = {
         year: 2015,
         meal: "breakfast",
         alt: "Continental breakfast spread with croissants, hash browns, toast, fresh fruit, hung curd, and watermelon juice"
+      },
+      {
+        type: "image",
+        src: "assets/food/mixed-sizzler-platter-orkos-city-center.jpg",
+        place: "Orkos, City Center, Kolkata",
+        year: 2015,
+        meal: "dinner",
+        alt: "Mixed sizzler platter with pineapple, broccoli, peas, fries, and cheese-topped noodles"
       }
     ],
     "Bengali": [
@@ -714,6 +722,22 @@ const SITE_DATA = {
         year: 2015,
         meal: "dinner",
         alt: "Bengali mutton and chicken curry with steamed rice, dal, and fried onions"
+      },
+      {
+        type: "image",
+        src: "assets/food/fish-malai-curry-cauliflower-radhuni-kalighat.jpg",
+        place: "Radhuni, Kalighat, Kolkata",
+        year: 2015,
+        meal: "lunch",
+        alt: "Fish malai curry with cauliflower and potato in a creamy mustard-spiced gravy"
+      },
+      {
+        type: "image",
+        src: "assets/food/bengali-thali-luchi-mutton-fish-6-ballygunge-place.jpg",
+        place: "6 Ballygunge Place, Sector 5, Salt Lake, Kolkata",
+        year: 2015,
+        meal: "lunch",
+        alt: "Elaborate Bengali thali on banana leaf with luchi, mutton curry, fish, shukto, dal, and chutney"
       }
     ],
     "Chinese": [
@@ -740,6 +764,14 @@ const SITE_DATA = {
         year: 2015,
         meal: "dinner",
         alt: "Hot and sour soup with shredded vegetables and noodles"
+      },
+      {
+        type: "image",
+        src: "assets/food/crispy-chicken-pistachios-hakka-city-center.jpg",
+        place: "Hakka, City Center 1, Salt Lake, Kolkata",
+        year: 2015,
+        meal: "dinner",
+        alt: "Crispy chicken tossed with pistachios and scallions in a glossy Hakka-style sauce"
       }
     ],
     "Mughlai": [
@@ -766,6 +798,14 @@ const SITE_DATA = {
         year: 2015,
         meal: "dinner",
         alt: "Matka biryani with mutton curry, chicken curry, and tandoori naan"
+      },
+      {
+        type: "image",
+        src: "assets/food/seekh-kabab-rang-de-basanti-dhaba.jpg",
+        place: "Rang de Basanti Dhaba, College More, Sector 5, Salt Lake, Kolkata",
+        year: 2015,
+        meal: "lunch",
+        alt: "Seekh kababs served with sliced onion, cucumber, tomato, and lemon"
       }
     ],
     "Italian": [],
@@ -875,6 +915,14 @@ const SITE_DATA = {
         year: 2015,
         meal: "boozing",
         alt: "Beer with chili potato and grilled paneer tikka"
+      },
+      {
+        type: "image",
+        src: "assets/food/beer-crispy-chilli-paneer-hotel-senses.jpg",
+        place: "Hotel Senses, Kolkata",
+        year: 2015,
+        meal: "boozing",
+        alt: "Beer with crispy chilli paneer and roasted peanuts"
       }
     ]
   },

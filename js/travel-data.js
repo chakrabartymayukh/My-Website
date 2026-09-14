@@ -8378,6 +8378,187 @@ const TRAVEL_DATA = {
       }]
     }
   ]
+},
+{
+  id: "j-gangtok-north-sikkim-2015",
+  title: "Gangtok & North Sikkim Journey",
+  year: 2015,
+  startDate: "2015-10-04",
+  endDate: "2015-10-06",
+  description: "",
+  route: [
+    { latitude: 28.0288, longitude: 88.7247 },
+    { latitude: 27.7167, longitude: 88.5500 },
+    { latitude: 27.6892, longitude: 88.7457 },
+    { latitude: 27.8827, longitude: 88.7304 },
+    { latitude: 27.8167, longitude: 88.6931 },
+    { latitude: 27.3314, longitude: 88.6138 }
+  ],
+  coverImage: "assets/travel/gurudongmar-lake-2015-web.jpg",
+  destinations: [
+    {
+      id: "d-gurudongmar-lake-2015",
+      name: "Gurudongmar Lake",
+      city: "Gurudongmar",
+      stateOrRegion: "North Sikkim",
+      country: "India",
+      continent: "Asia",
+      latitude: 28.0288,
+      longitude: 88.7247,
+      visitDate: "2015-10-04",
+      description: "",
+      highlights: [],
+      images: ["assets/travel/gurudongmar-lake-2015-web.jpg"],
+      journeyId: "j-gangtok-north-sikkim-2015",
+      places: [{
+        id: "p-gurudongmar-lake-2015",
+        name: "Gurudongmar Lake",
+        latitude: 28.0288,
+        longitude: 88.7247,
+        description: "",
+        visitDate: "2015-10-04",
+        images: ["assets/travel/gurudongmar-lake-2015-web.jpg"],
+        highlights: [],
+        destinationId: "d-gurudongmar-lake-2015",
+        arrivalMode: "car-with-driver"
+      }]
+    },
+    {
+      id: "d-lachen-2015",
+      name: "Lachen",
+      city: "Lachen",
+      stateOrRegion: "North Sikkim",
+      country: "India",
+      continent: "Asia",
+      latitude: 27.7167,
+      longitude: 88.5500,
+      visitDate: "2015-10-04",
+      description: "",
+      highlights: [],
+      images: ["assets/travel/lachen-village-2015-web.jpg"],
+      journeyId: "j-gangtok-north-sikkim-2015",
+      places: [{
+        id: "p-lachen-2015",
+        name: "Lachen Village",
+        latitude: 27.7167,
+        longitude: 88.5500,
+        description: "",
+        visitDate: "2015-10-04",
+        images: ["assets/travel/lachen-village-2015-web.jpg"],
+        highlights: [],
+        destinationId: "d-lachen-2015",
+        arrivalMode: "car-with-driver"
+      }]
+    },
+    {
+      id: "d-lachung-2015",
+      name: "Lachung",
+      city: "Lachung",
+      stateOrRegion: "North Sikkim",
+      country: "India",
+      continent: "Asia",
+      latitude: 27.6892,
+      longitude: 88.7457,
+      visitDate: "2015-10-05",
+      description: "",
+      highlights: [],
+      images: ["assets/travel/lachung-village-2015-web.jpg"],
+      journeyId: "j-gangtok-north-sikkim-2015",
+      places: [{
+        id: "p-lachung-2015",
+        name: "Lachung Village",
+        latitude: 27.6892,
+        longitude: 88.7457,
+        description: "",
+        visitDate: "2015-10-05",
+        images: ["assets/travel/lachung-village-2015-web.jpg"],
+        highlights: [],
+        destinationId: "d-lachung-2015",
+        arrivalMode: "car-with-driver"
+      }]
+    },
+    {
+      id: "d-zero-point-2015",
+      name: "Zero Point (Yumesamdong)",
+      city: "Yumesamdong",
+      stateOrRegion: "North Sikkim",
+      country: "India",
+      continent: "Asia",
+      latitude: 27.8827,
+      longitude: 88.7304,
+      visitDate: "2015-10-05",
+      description: "",
+      highlights: [],
+      images: ["assets/travel/zero-point-yumesamdong-2015-web.jpg"],
+      journeyId: "j-gangtok-north-sikkim-2015",
+      places: [{
+        id: "p-zero-point-2015",
+        name: "Zero Point (Yumesamdong)",
+        latitude: 27.8827,
+        longitude: 88.7304,
+        description: "",
+        visitDate: "2015-10-05",
+        images: ["assets/travel/zero-point-yumesamdong-2015-web.jpg"],
+        highlights: [],
+        destinationId: "d-zero-point-2015",
+        arrivalMode: "car-with-driver"
+      }]
+    },
+    {
+      id: "d-yumthang-valley-2015",
+      name: "Yumthang Valley",
+      city: "Yumthang",
+      stateOrRegion: "North Sikkim",
+      country: "India",
+      continent: "Asia",
+      latitude: 27.8167,
+      longitude: 88.6931,
+      visitDate: "2015-10-05",
+      description: "",
+      highlights: [],
+      images: ["assets/travel/yumthang-valley-2015-web.jpg"],
+      journeyId: "j-gangtok-north-sikkim-2015",
+      places: [{
+        id: "p-yumthang-valley-2015",
+        name: "Yumthang Valley",
+        latitude: 27.8167,
+        longitude: 88.6931,
+        description: "",
+        visitDate: "2015-10-05",
+        images: ["assets/travel/yumthang-valley-2015-web.jpg"],
+        highlights: [],
+        destinationId: "d-yumthang-valley-2015",
+        arrivalMode: "car-with-driver"
+      }]
+    },
+    {
+      id: "d-mg-marg-gangtok-2015",
+      name: "MG Marg",
+      city: "Gangtok",
+      stateOrRegion: "Sikkim",
+      country: "India",
+      continent: "Asia",
+      latitude: 27.3314,
+      longitude: 88.6138,
+      visitDate: "2015-10-06",
+      description: "",
+      highlights: [],
+      images: ["assets/travel/mg-marg-gangtok-2015-web.jpg"],
+      journeyId: "j-gangtok-north-sikkim-2015",
+      places: [{
+        id: "p-mg-marg-gangtok-2015",
+        name: "MG Marg",
+        latitude: 27.3314,
+        longitude: 88.6138,
+        description: "",
+        visitDate: "2015-10-06",
+        images: ["assets/travel/mg-marg-gangtok-2015-web.jpg"],
+        highlights: [],
+        destinationId: "d-mg-marg-gangtok-2015",
+        arrivalMode: "car-with-driver"
+      }]
+    }
+  ]
 }
 ]
 };
