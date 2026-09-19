@@ -1115,6 +1115,50 @@ const WILDLIFE_DATA = {
       description: "",
       highlights: [],
       notes: ""
+    },
+    {
+      id: "w-water-monitor-hong-island-2015",
+      species: "Asian Water Monitor",
+      subject: "Asian Water Monitor walking along a beach",
+      location: {
+        name: "Hong Island",
+        city: "Krabi",
+        stateOrRegion: "Krabi",
+        country: "Thailand",
+        continent: "Asia",
+        latitude: 8.1167,
+        longitude: 98.6167
+      },
+      visitDate: "2015-12-27",
+      time: "13:13:51",
+      year: 2015,
+      camera: "Nikon D7100",
+      images: ["assets/hobbies/wildlife-photography/water-monitor-hong-island-web.jpg"],
+      description: "",
+      highlights: [],
+      notes: ""
+    },
+    {
+      id: "w-long-tailed-macaques-monkey-beach-2015",
+      species: "Long-tailed Macaque",
+      subject: "Long-tailed macaques on rocks at Monkey Beach",
+      location: {
+        name: "Monkey Beach",
+        city: "Ko Phi Phi Don",
+        stateOrRegion: "Krabi",
+        country: "Thailand",
+        continent: "Asia",
+        latitude: 7.7469,
+        longitude: 98.7739
+      },
+      visitDate: "2015-12-30",
+      time: "11:02:00",
+      year: 2015,
+      camera: "Nikon COOLPIX AW130",
+      images: ["assets/hobbies/wildlife-photography/long-tailed-macaques-monkey-beach-phi-phi-web.jpg"],
+      description: "",
+      highlights: [],
+      notes: ""
     }
   ]
 };

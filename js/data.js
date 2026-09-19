@@ -561,6 +561,55 @@ const SITE_DATA = {
       region: { continent: "Asia", country: "India", state: "West Bengal" },
       visitDate: "8 March 2015",
       photo: "assets/adventure/parasailing-mandarmani-beach-web.jpg"
+    },
+    {
+      sport: "Jet Skiing",
+      place: "Pattaya Beach",
+      region: { continent: "Asia", country: "Thailand", state: "Chonburi" },
+      visitDate: "24 December 2015",
+      photo: "assets/adventure/jet-skiing-pattaya-beach-web.jpg"
+    },
+    {
+      sport: "Parasailing",
+      place: "Pattaya Beach",
+      region: { continent: "Asia", country: "Thailand", state: "Chonburi" },
+      visitDate: "24 December 2015",
+      photo: "assets/adventure/parasailing-pattaya-beach-web.jpg"
+    },
+    {
+      sport: "Swimming",
+      place: "Hong Lagoon",
+      region: { continent: "Asia", country: "Thailand", state: "Krabi" },
+      visitDate: "27 December 2015",
+      photo: "assets/adventure/swimming-hong-lagoon-krabi-web.jpg"
+    },
+    {
+      sport: "Kayaking",
+      place: "Tam Talu Island",
+      region: { continent: "Asia", country: "Thailand", state: "Krabi" },
+      visitDate: "28 December 2015",
+      photo: "assets/adventure/kayaking-tam-talu-island-krabi-web.jpg"
+    },
+    {
+      sport: "Kayaking",
+      place: "Panak Island",
+      region: { continent: "Asia", country: "Thailand", state: "Krabi" },
+      visitDate: "28 December 2015",
+      photo: "assets/adventure/kayaking-panak-island-krabi-web.jpg"
+    },
+    {
+      sport: "Swimming",
+      place: "Patong Beach",
+      region: { continent: "Asia", country: "Thailand", state: "Phuket" },
+      visitDate: "29 December 2015",
+      photo: "assets/adventure/swimming-patong-beach-phuket-web.jpg"
+    },
+    {
+      sport: "Swimming",
+      place: "Loh Lana Bay",
+      region: { continent: "Asia", country: "Thailand", state: "Krabi" },
+      visitDate: "30 December 2015",
+      photo: "assets/adventure/swimming-loh-lana-bay-phi-phi-web.jpg"
     }
   ],
 
@@ -810,7 +859,24 @@ const SITE_DATA = {
     ],
     "Italian": [],
     "Vietnamese": [],
-    "Thai": [],
+    "Thai": [
+      {
+        type: "image",
+        src: "assets/food/crab-fried-rice-chocolate-martini-ibar-insomnia-pattaya.jpg",
+        place: "iBar / Insomnia, Pattaya",
+        year: 2015,
+        meal: "dinner",
+        alt: "Thai crab fried rice with cucumber and spring onion, served alongside a chocolate martini"
+      },
+      {
+        type: "image",
+        src: "assets/food/skewered-chicken-fried-rice-vegetables-railay-viewpoint-resort.jpg",
+        place: "Railay Viewpoint Resort, Krabi",
+        year: 2015,
+        meal: "snacks",
+        alt: "Skewered chicken and tomato with fried rice, red curry chicken and potatoes, and steamed vegetables"
+      }
+    ],
     "Street Foods": [],
     "Cafes": [
       {
@@ -855,6 +921,14 @@ const SITE_DATA = {
         year: 2015,
         meal: "lunch",
         alt: "Charred tandoori chicken with chilli chicken and assorted fritters"
+      },
+      {
+        type: "image",
+        src: "assets/food/watermelon-beer-wine-grand-pearl-ayutthaya-cruise.jpg",
+        place: "Grand Pearl River Cruise, Ayutthaya",
+        year: 2016,
+        meal: "lunch",
+        alt: "Watermelon slices with beer, wine, and water on the river cruise deck"
       }
     ],
     "Bhutanese": [
@@ -931,6 +1005,14 @@ const SITE_DATA = {
         year: 2015,
         meal: "boozing",
         alt: "Beer and a martini with a side of appetizers at the bar"
+      },
+      {
+        type: "image",
+        src: "assets/food/flaming-cocktail-baiyoke-tower-ii-bangkok.jpg",
+        place: "Baiyoke Tower II, Bangkok",
+        year: 2016,
+        meal: "boozing",
+        alt: "Flaming cocktail with a smoking rim alongside an iced fruit cocktail"
       }
     ]
   },
