@@ -570,6 +570,13 @@ const SITE_DATA = {
       photo: "assets/adventure/jet-skiing-pattaya-beach-web.jpg"
     },
     {
+      sport: "Jet Skiing",
+      place: "Rishikonda Beach",
+      region: { continent: "Asia", country: "India", state: "Andhra Pradesh" },
+      visitDate: "26 January 2016",
+      photo: "assets/adventure/jet-skiing-rishikonda-beach-vizag-web.jpg"
+    },
+    {
       sport: "Parasailing",
       place: "Pattaya Beach",
       region: { continent: "Asia", country: "Thailand", state: "Chonburi" },
