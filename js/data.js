@@ -923,6 +923,14 @@ const SITE_DATA = {
         year: 2015,
         meal: "boozing",
         alt: "Beer with crispy chilli paneer and roasted peanuts"
+      },
+      {
+        type: "image",
+        src: "assets/food/beer-martini-wilsons-bar-lalit-great-eastern.jpg",
+        place: "Wilson's Bar, The Lalit Great Eastern, Kolkata",
+        year: 2015,
+        meal: "boozing",
+        alt: "Beer and a martini with a side of appetizers at the bar"
       }
     ]
   },
