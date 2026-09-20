@@ -39,6 +39,8 @@
     "Rock Climbing": "climb",
     "Parasailing": "sail",
     "Ziplining": "zip",
+    "Surfing": "surf",
+    "Kayaking": "swim",
 
     "Go-Karting": "drive",
     "Jet Skiing": "jetski",
@@ -73,6 +75,8 @@
     "Rock Climbing": `<circle cx="16" cy="4.5" r="1.8"/><path d="M14 8 9 12l1 5M9 12l5 1.5V19M4 21l5-4M18 21l-4-5 3-4-4-2"/>`,
     "Parasailing": `<path d="M3 6c2.5-2.5 5-3.5 9-3.5s6.5 1 9 3.5"/><path d="M7 5.5 11 15M17 5.5 13 15"/><rect x="10" y="16" width="4" height="5" rx="0.6"/>`,
     "Ziplining": `<path d="M2 4 22 18"/><circle cx="15" cy="12.5" r="1.6"/><path d="M15 14v3M12.5 20l2.5-3 2.5 3"/>`,
+    "Surfing": `<circle cx="17" cy="5" r="1.7"/><path d="M15 8l-4 3 2 3-2 6"/><path d="M2 17c2-1.5 4-1.5 6 0s4 1.5 6 0 4-1.5 6 0"/><path d="M8 21l6-13"/>`,
+    "Kayaking": `<path d="M2 13c4-6 16-6 20 0"/><ellipse cx="12" cy="15" rx="9" ry="2.5"/><path d="M4 8l4 3M20 8l-4 3"/>`,
 
     "Go-Karting": `<circle cx="6" cy="17" r="2.2"/><circle cx="18" cy="17" r="2.2"/><path d="M4 15 6 9h9l3 6M9 9V6h3"/>`,
     "Jet Skiing": `<path d="M3 16c2-2 4-2 6 0s4 2 6 0 4-2 6-0"/><path d="M6 13 9 6l6 1-1 6z"/>`,

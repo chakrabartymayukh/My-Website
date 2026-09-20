@@ -217,7 +217,7 @@ const SITE_DATA = {
      shared dataset" requirement. */
 
   adventureSports: [
-    "Scuba Diving", "Paragliding", "White Water Rafting", "Rock Climbing", "Parasailing", "Ziplining"
+    "Scuba Diving", "Paragliding", "White Water Rafting", "Rock Climbing", "Parasailing", "Ziplining", "Surfing", "Kayaking"
   ],
   outdoorActivities: [
     "Go-Karting", "Jet Skiing", "Skiing", "Skateboarding", "Golfing", "Hiking", "Elephant Safari", "Boat Safari", "Jeep Safari", "Ice Skating", "Snowmobiling", "Boating", "Swimming", "Snowshoeing", "Horse Cart Riding", "Ox Cart Riding", "Basketball", "Sailing", "Whale Watching", "Trike Riding", "ATV Riding"
@@ -617,6 +617,48 @@ const SITE_DATA = {
       region: { continent: "Asia", country: "Thailand", state: "Krabi" },
       visitDate: "30 December 2015",
       photo: "assets/adventure/swimming-loh-lana-bay-phi-phi-web.jpg"
+    },
+    {
+      sport: "Surfing",
+      place: "Pantai Kuta (Kuta Beach)",
+      region: { continent: "Asia", country: "Indonesia", state: "Bali" },
+      visitDate: "11 August 2016",
+      photo: "assets/adventure/adventure-sports/surfing/images/surfing-kuta-web.jpg"
+    },
+    {
+      sport: "Scuba Diving",
+      place: "Nusa Dua",
+      region: { continent: "Asia", country: "Indonesia", state: "Bali" },
+      visitDate: "11 August 2016",
+      photo: "assets/adventure/adventure-sports/scuba-diving/images/scuba-nusa-dua-web.jpg"
+    },
+    {
+      sport: "Jet Skiing",
+      place: "Nusa Dua",
+      region: { continent: "Asia", country: "Indonesia", state: "Bali" },
+      visitDate: "11 August 2016",
+      photo: "assets/adventure/outdoor-activities/jet-skiing/images/jetskiing-nusa-dua-web.jpg"
+    },
+    {
+      sport: "Elephant Safari",
+      place: "Angkor Thom South Gate",
+      region: { continent: "Asia", country: "Cambodia", state: "Siem Reap" },
+      visitDate: "16 August 2016",
+      photo: "assets/adventure/elephant-safari-angkor-thom-south-gate-web.jpg"
+    },
+    {
+      sport: "Kayaking",
+      place: "Pulau Dayang Bunting",
+      region: { continent: "Asia", country: "Malaysia", state: "Langkawi" },
+      visitDate: "19 August 2016",
+      photo: "assets/adventure/kayaking-pulau-dayang-bunting-langkawi-web.jpg"
+    },
+    {
+      sport: "Boating",
+      place: "Pulau Dayang Bunting",
+      region: { continent: "Asia", country: "Malaysia", state: "Langkawi" },
+      visitDate: "19 August 2016",
+      photo: "assets/adventure/boating-pulau-dayang-bunting-langkawi-web.jpg"
     }
   ],
 
@@ -908,7 +950,72 @@ const SITE_DATA = {
         alt: "Skewered chicken and tomato with fried rice, red curry chicken and potatoes, and steamed vegetables"
       }
     ],
-    "Street Foods": [],
+    "Street Foods": [
+      {
+        type: "image",
+        src: "assets/food/fresh-spring-rolls-peanut-sauce-pub-street-siem-reap-1.jpg",
+        place: "Pub Street, Siem Reap, Cambodia",
+        year: 2016,
+        meal: "snacks",
+        alt: "Fresh Vietnamese-style rice paper spring rolls served whole with a tangy dipping sauce"
+      },
+      {
+        type: "image",
+        src: "assets/food/grilled-chicken-wing-skewers-pub-street-siem-reap.jpg",
+        place: "Pub Street, Siem Reap, Cambodia",
+        year: 2016,
+        meal: "dinner",
+        alt: "Skewered grilled chicken wings glazed and charred over an open flame"
+      },
+      {
+        type: "image",
+        src: "assets/food/fresh-spring-rolls-peanut-sauce-pub-street-siem-reap-2.jpg",
+        place: "Pub Street, Siem Reap, Cambodia",
+        year: 2016,
+        meal: "dinner",
+        alt: "Fresh rice paper spring rolls sliced and served with a roasted peanut dipping sauce"
+      },
+      {
+        type: "image",
+        src: "assets/food/roti-telur-egg-curry-chilli-sauce-pantai-cenang-langkawi.jpg",
+        place: "Pantai Cenang, Langkawi, Malaysia",
+        year: 2016,
+        meal: "breakfast",
+        alt: "Roti telur (egg-stuffed flatbread) served with curry and chilli dipping sauces"
+      },
+      {
+        type: "image",
+        src: "assets/food/roti-canai-curry-chilli-sauce-pantai-cenang-langkawi.jpg",
+        place: "Pantai Cenang, Langkawi, Malaysia",
+        year: 2016,
+        meal: "lunch",
+        alt: "Crispy roti canai flatbread served with curry and chilli dipping sauces"
+      },
+      {
+        type: "image",
+        src: "assets/food/cashew-nut-chicken-stir-fry-pantai-cenang-langkawi.jpg",
+        place: "Pantai Cenang, Langkawi, Malaysia",
+        year: 2016,
+        meal: "dinner",
+        alt: "Stir-fried chicken with cashew nuts, baby corn, bell peppers, and spring onions in a savory sauce"
+      },
+      {
+        type: "image",
+        src: "assets/food/spicy-noodle-soup-boiled-egg-mint-melaka.jpg",
+        place: "Melaka, Malaysia",
+        year: 2016,
+        meal: "lunch",
+        alt: "Spicy tamarind-based noodle soup topped with fish cake, boiled egg, shredded cucumber, red onion, and mint"
+      },
+      {
+        type: "image",
+        src: "assets/food/nasi-lemak-sambal-chicken-melaka.jpg",
+        place: "Melaka, Malaysia",
+        year: 2016,
+        meal: "lunch",
+        alt: "Nasi lemak with sambal chicken, coconut rice, cucumber slices, boiled egg, peanuts, and fried anchovies"
+      }
+    ],
     "Cafes": [
       {
         type: "image",
@@ -937,6 +1044,22 @@ const SITE_DATA = {
     ],
     "Coffee": [],
     "Multicuisine": [
+      {
+        type: "image",
+        src: "assets/food/grilled-chicken-rice-salad-hotel-viva-siem-reap.jpg",
+        place: "Hotel Viva, Siem Reap, Cambodia",
+        year: 2016,
+        meal: "dinner",
+        alt: "Grilled chicken strips with steamed rice and a fresh green salad"
+      },
+      {
+        type: "image",
+        src: "assets/food/nasi-goreng-satay-amazing-kuta-hotel.jpg",
+        place: "Amazing Kuta Hotel, Kuta, Bali, Indonesia",
+        year: 2016,
+        meal: "dinner",
+        alt: "Nasi goreng fried rice topped with a fried egg, served with grilled satay skewers and seafood"
+      },
       {
         type: "image",
         src: "assets/food/tandoori-meatballs-saffron-cake-barbeque-nation.jpg",
@@ -997,6 +1120,14 @@ const SITE_DATA = {
       }
     ],
     "Boozing": [
+      {
+        type: "image",
+        src: "assets/food/tequila-shots-street-vendor-pantai-cenang-langkawi.jpg",
+        place: "Street vendor, Pantai Cenang Beach, Langkawi, Malaysia",
+        year: 2016,
+        meal: "boozing",
+        alt: "Tequila shots with salted rims and lime wedges, served in plastic cups at a beachside street vendor"
+      },
       {
         type: "image",
         src: "assets/food/whiskey-on-the-rocks-the-bar-hyatt-regency-kolkata.jpg",

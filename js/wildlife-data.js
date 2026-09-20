@@ -1159,6 +1159,28 @@ const WILDLIFE_DATA = {
       description: "",
       highlights: [],
       notes: ""
+    },
+    {
+      id: "w-white-bellied-sea-eagles-pulau-singa-besar-2016",
+      species: "White-bellied Sea Eagle",
+      subject: "White-bellied Sea Eagles perched together in a treetop",
+      location: {
+        name: "Pulau Singa Besar",
+        city: "Langkawi",
+        stateOrRegion: "Kedah",
+        country: "Malaysia",
+        continent: "Asia",
+        latitude: 6.225,
+        longitude: 99.734
+      },
+      visitDate: "2016-08-19",
+      time: "11:08:56",
+      year: 2016,
+      camera: "SONY DSC-HX200V",
+      images: ["assets/hobbies/wildlife-photography/white-bellied-sea-eagles-pulau-singa-besar-web.jpg"],
+      description: "",
+      highlights: [],
+      notes: ""
     }
   ]
 };
