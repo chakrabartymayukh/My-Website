@@ -862,6 +862,14 @@ const SITE_DATA = {
         year: 2015,
         meal: "lunch",
         alt: "Seekh kababs served with sliced onion, cucumber, tomato, and lemon"
+      },
+      {
+        type: "image",
+        src: "assets/food/chicken-tikka-platter-arsalan-kolkata.jpg",
+        place: "Arsalan, New Alipore, Kolkata",
+        year: 2016,
+        meal: "lunch",
+        alt: "Grilled chicken tikka pieces garnished with mint, served with onion and carrot salad"
       }
     ],
     "Italian": [],
@@ -936,6 +944,22 @@ const SITE_DATA = {
         year: 2016,
         meal: "lunch",
         alt: "Watermelon slices with beer, wine, and water on the river cruise deck"
+      },
+      {
+        type: "image",
+        src: "assets/food/spicy-noodle-soup-indthalia-kolkata.jpg",
+        place: "Indthalia, Kolkata",
+        year: 2015,
+        meal: "lunch",
+        alt: "Spicy noodle soup with crispy fried noodles and fresh herbs"
+      },
+      {
+        type: "image",
+        src: "assets/food/peri-peri-chicken-shrimp-ol-yourz-kolkata.jpg",
+        place: "Ol Yourz, Salt Lake, Kolkata",
+        year: 2016,
+        meal: "dinner",
+        alt: "Char-grilled peri-peri chicken and shrimp on a white plate"
       }
     ],
     "Bhutanese": [
