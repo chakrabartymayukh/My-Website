@@ -10606,6 +10606,47 @@ const TRAVEL_DATA = {
     }
   ]
 },
+{
+  id: "j-tajpur-2016",
+  title: "Tajpur",
+  year: 2016,
+  startDate: "2016-06-25",
+  endDate: "2016-06-25",
+  description: "",
+  route: [
+    { latitude: 21.68, longitude: 87.17 }
+  ],
+  coverImage: "assets/travel/tajpur-sunset-2016-web.jpg",
+  destinations: [
+    {
+      id: "d-tajpur-beach-2016",
+      name: "Tajpur Beach",
+      city: "Tajpur",
+      stateOrRegion: "West Bengal",
+      country: "India",
+      continent: "Asia",
+      latitude: 21.68,
+      longitude: 87.17,
+      visitDate: "2016-06-25",
+      description: "",
+      highlights: [],
+      images: ["assets/travel/tajpur-sunset-2016-web.jpg"],
+      journeyId: "j-tajpur-2016",
+      places: [{
+        id: "p-tajpur-beach-2016",
+        name: "Tajpur Beach",
+        latitude: 21.68,
+        longitude: 87.17,
+        description: "",
+        visitDate: "2016-06-25",
+        images: ["assets/travel/tajpur-sunset-2016-web.jpg"],
+        highlights: [],
+        destinationId: "d-tajpur-beach-2016",
+        arrivalMode: "bus"
+      }]
+    }
+  ]
+},
 
 ]
 };

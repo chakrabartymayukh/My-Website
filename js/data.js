@@ -752,6 +752,14 @@ const SITE_DATA = {
         year: 2015,
         meal: "dinner",
         alt: "Mixed sizzler platter with pineapple, broccoli, peas, fries, and cheese-topped noodles"
+      },
+      {
+        type: "image",
+        src: "assets/food/veggie-loaded-sub-subway-sector-5.jpg",
+        place: "Subway, Sector 5, Salt Lake, Kolkata",
+        year: 2016,
+        meal: "snacks",
+        alt: "Loaded sub sandwich with cucumber, jalapeno, onion, and mayo on multigrain bread"
       }
     ],
     "Bengali": [
@@ -794,6 +802,14 @@ const SITE_DATA = {
         year: 2015,
         meal: "lunch",
         alt: "Elaborate Bengali thali on banana leaf with luchi, mutton curry, fish, shukto, dal, and chutney"
+      },
+      {
+        type: "image",
+        src: "assets/food/cold-drinks-tewari-confectioners-ajc-bose-road.jpg",
+        place: "Tewari Confectioners, AJC Bose Road, Kolkata",
+        year: 2016,
+        meal: "lunch",
+        alt: "Two glasses of cold drinks served at a heritage Bengali sweet shop"
       }
     ],
     "Chinese": [
@@ -960,6 +976,14 @@ const SITE_DATA = {
         year: 2016,
         meal: "dinner",
         alt: "Char-grilled peri-peri chicken and shrimp on a white plate"
+      },
+      {
+        type: "image",
+        src: "assets/food/tandoori-chicken-fish-fingers-sojourn-kolkata.jpg",
+        place: "Sojourn, Salt Lake, Kolkata",
+        year: 2016,
+        meal: "dinner",
+        alt: "Tandoori chicken leg with fried fish fingers and onion rings"
       }
     ],
     "Bhutanese": [
