@@ -12054,6 +12054,223 @@ const TRAVEL_DATA = {
   ]
 },
 
+    {
+  id: "j-mandarmani-2016",
+  title: "Mandarmani Beach",
+  year: 2016,
+  startDate: "2016-11-18",
+  endDate: "2016-11-18",
+  description: "",
+  route: [
+    { latitude: 21.6490, longitude: 87.6626 }
+  ],
+  coverImage: "assets/travel/mandarmani-sunset-boats-2016-web.jpg",
+  destinations: [
+    {
+      id: "d-mandarmani-beach-2016",
+      name: "Mandarmani Beach",
+      city: "Mandarmani",
+      stateOrRegion: "West Bengal",
+      country: "India",
+      continent: "Asia",
+      latitude: 21.6490,
+      longitude: 87.6626,
+      visitDate: "2016-11-18",
+      time: "16:42:53",
+      description: "",
+      highlights: [],
+      images: ["assets/travel/mandarmani-sunset-boats-2016-web.jpg"],
+      journeyId: "j-mandarmani-2016",
+      places: [{
+        id: "p-mandarmani-beach-2016",
+        name: "Mandarmani Beach",
+        latitude: 21.6490,
+        longitude: 87.6626,
+        description: "",
+        visitDate: "2016-11-18",
+        images: ["assets/travel/mandarmani-sunset-boats-2016-web.jpg"],
+        highlights: [],
+        destinationId: "d-mandarmani-beach-2016",
+        arrivalMode: "car"
+      }]
+    }
+  ]
+},
+
+    {
+  id: "j-dhauli-2017",
+  title: "Dhauli Shanti Stupa",
+  year: 2017,
+  startDate: "2017-02-21",
+  endDate: "2017-02-21",
+  description: "",
+  route: [
+    { latitude: 20.1924, longitude: 85.8390 }
+  ],
+  coverImage: "assets/travel/dhauli-shanti-stupa-odisha-2017-web.jpg",
+  destinations: [
+    {
+      id: "d-dhauli-shanti-stupa-2017",
+      name: "Dhauli Shanti Stupa",
+      city: "Bhubaneswar",
+      stateOrRegion: "Odisha",
+      country: "India",
+      continent: "Asia",
+      latitude: 20.1924,
+      longitude: 85.8390,
+      visitDate: "2017-02-21",
+      time: "17:29:46",
+      description: "",
+      highlights: [],
+      images: ["assets/travel/dhauli-shanti-stupa-odisha-2017-web.jpg"],
+      journeyId: "j-dhauli-2017",
+      places: [{
+        id: "p-dhauli-shanti-stupa-2017",
+        name: "Dhauli Shanti Stupa",
+        latitude: 20.1924,
+        longitude: 85.8390,
+        description: "",
+        visitDate: "2017-02-21",
+        images: ["assets/travel/dhauli-shanti-stupa-odisha-2017-web.jpg"],
+        highlights: [],
+        destinationId: "d-dhauli-shanti-stupa-2017",
+        arrivalMode: ""
+      }]
+    }
+  ]
+},
+
+{
+  id: "j-darjeeling-2017",
+  title: "Darjeeling & Kalimpong Journey",
+  year: 2017,
+  startDate: "2017-06-04",
+  endDate: "2017-06-05",
+  description: "A short hill getaway through Darjeeling town, Kalimpong, and Kurseong.",
+  route: [],
+  coverImage: "assets/travel/darjeeling-ropeway-2017-web.jpg",
+  destinations: [
+    {
+      id: "d-darjeeling-2017",
+      name: "Darjeeling",
+      city: "Darjeeling",
+      stateOrRegion: "West Bengal",
+      country: "India",
+      continent: "Asia",
+      latitude: 27.0410,
+      longitude: 88.2663,
+      visitDate: "2017-06-04",
+      time: "13:00:30",
+      description: "",
+      highlights: [],
+      images: [
+        "assets/travel/darjeeling-ropeway-2017-web.jpg",
+        "assets/travel/tenzing-rock-darjeeling-2017-web.jpg",
+        "assets/travel/batasia-loop-darjeeling-2017-web.jpg"
+      ],
+      journeyId: "j-darjeeling-2017",
+      places: [
+        {
+          id: "p-darjeeling-ropeway-2017",
+          name: "Darjeeling Ropeway",
+          latitude: 27.0651,
+          longitude: 88.2541,
+          description: "",
+          visitDate: "2017-06-04",
+          images: ["assets/travel/darjeeling-ropeway-2017-web.jpg"],
+          highlights: [],
+          destinationId: "d-darjeeling-2017",
+          arrivalMode: "ropeway"
+        },
+        {
+          id: "p-tenzing-rock-2017",
+          name: "Tenzing Rock, HMI",
+          latitude: 27.0410,
+          longitude: 88.2660,
+          description: "",
+          visitDate: "2017-06-04",
+          images: ["assets/travel/tenzing-rock-darjeeling-2017-web.jpg"],
+          highlights: [],
+          destinationId: "d-darjeeling-2017",
+          arrivalMode: "train"
+        },
+        {
+          id: "p-batasia-loop-2017",
+          name: "Batasia Loop",
+          latitude: 27.0367,
+          longitude: 88.2506,
+          description: "",
+          visitDate: "2017-06-04",
+          images: ["assets/travel/batasia-loop-darjeeling-2017-web.jpg"],
+          highlights: [],
+          destinationId: "d-darjeeling-2017",
+          arrivalMode: "train"
+        }
+      ]
+    },
+    {
+      id: "d-kalimpong-2017",
+      name: "Kalimpong",
+      city: "Kalimpong",
+      stateOrRegion: "West Bengal",
+      country: "India",
+      continent: "Asia",
+      latitude: 27.0237,
+      longitude: 88.2543,
+      visitDate: "2017-06-04",
+      time: "18:04:02",
+      description: "",
+      highlights: [],
+      images: ["assets/travel/dali-monastery-darjeeling-2017-web.jpg"],
+      journeyId: "j-darjeeling-2017",
+      places: [
+        {
+          id: "p-dali-monastery-2017",
+          name: "Dali Monastery (Druk Sangag Choling)",
+          latitude: 27.0237,
+          longitude: 88.2543,
+          description: "",
+          visitDate: "2017-06-04",
+          images: ["assets/travel/dali-monastery-darjeeling-2017-web.jpg"],
+          highlights: [],
+          destinationId: "d-kalimpong-2017",
+          arrivalMode: "car"
+        }
+      ]
+    },
+    {
+      id: "d-kurseong-2017",
+      name: "Kurseong",
+      city: "Kurseong",
+      stateOrRegion: "West Bengal",
+      country: "India",
+      continent: "Asia",
+      latitude: 26.8589,
+      longitude: 88.2873,
+      visitDate: "2017-06-05",
+      time: "15:59:58",
+      description: "",
+      highlights: [],
+      images: ["assets/travel/kurseong-darjeeling-2017-web.jpg"],
+      journeyId: "j-darjeeling-2017",
+      places: [
+        {
+          id: "p-kurseong-2017",
+          name: "Kurseong",
+          latitude: 26.8589,
+          longitude: 88.2873,
+          description: "",
+          visitDate: "2017-06-05",
+          images: ["assets/travel/kurseong-darjeeling-2017-web.jpg"],
+          highlights: [],
+          destinationId: "d-kurseong-2017",
+          arrivalMode: "car"
+        }
+      ]
+    }
+  ]
+},
+
 ]
 };
 

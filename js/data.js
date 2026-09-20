@@ -659,6 +659,13 @@ const SITE_DATA = {
       region: { continent: "Asia", country: "Malaysia", state: "Langkawi" },
       visitDate: "19 August 2016",
       photo: "assets/adventure/boating-pulau-dayang-bunting-langkawi-web.jpg"
+    },
+    {
+      sport: "Swimming",
+      place: "Ibiza The Fern Resort & Spa",
+      region: { continent: "Asia", country: "India", state: "West Bengal" },
+      visitDate: "11 March 2017",
+      photo: "assets/adventure/swimming-ibiza-resort-kolkata-web.jpg"
     }
   ],
 
@@ -1046,6 +1053,86 @@ const SITE_DATA = {
     "Multicuisine": [
       {
         type: "image",
+        src: "assets/food/fried-egg-sausages-toast-breakfast-kaventers-darjeeling.jpg",
+        place: "Kaventer's, Darjeeling",
+        year: 2017,
+        meal: "breakfast",
+        alt: "A breakfast plate of fried eggs, sausages, and toast at Kaventer's, Darjeeling"
+      },
+      {
+        type: "image",
+        src: "assets/food/chicken-cutlet-fries-glenarys-darjeeling.jpg",
+        place: "Glenary's, Darjeeling",
+        year: 2017,
+        meal: "dinner",
+        alt: "Chicken cutlets with fries and gravy, served with sauteed vegetables at Glenary's, Darjeeling"
+      },
+      {
+        type: "image",
+        src: "assets/food/welcome-drink-crostini-paneer-tikka-xii-zodiac-fern-residency.jpg",
+        place: "XII Zodiac, The Fern Residency",
+        year: 2017,
+        meal: "lunch",
+        alt: "A pink welcome drink served with a crostini topped with spiced chutney and a piece of tandoori paneer tikka"
+      },
+      {
+        type: "image",
+        src: "assets/food/mutton-fish-curry-rice-hakka-noodles-xii-zodiac-fern-residency.jpg",
+        place: "XII Zodiac, The Fern Residency",
+        year: 2017,
+        meal: "lunch",
+        alt: "Mutton curry and fish curry served with steamed rice and vegetable hakka noodles"
+      },
+      {
+        type: "image",
+        src: "assets/food/thai-chicken-curry-hakka-noodles-tandoori-holiday-inn-chinar-park.jpg",
+        place: "Holiday Inn, near Chinar Park, Kolkata",
+        year: 2017,
+        meal: "lunch",
+        alt: "Thai-style chicken curry with basil, served alongside hakka noodles and tandoori chicken"
+      },
+      {
+        type: "image",
+        src: "assets/food/whole-tandoori-masala-fish-liqua-salt-lake.jpg",
+        place: "Liqua, Salt Lake, Kolkata",
+        year: 2017,
+        meal: "dinner",
+        alt: "Whole tandoori masala fish garnished with lemon, onion rings, and a decorative beetroot rose, served with pickled vegetables"
+      },
+      {
+        type: "image",
+        src: "assets/food/hariyali-fish-tikka-onion-salad-sandys-tower-odisha.jpg",
+        place: "Sandy's Tower, Odisha",
+        year: 2017,
+        meal: "dinner",
+        alt: "Grilled hariyali fish tikka served with onion-carrot salad and a lime wedge"
+      },
+      {
+        type: "image",
+        src: "assets/food/fried-fish-garlic-chilli-sauce-sandys-tower-odisha.jpg",
+        place: "Sandy's Tower, Odisha",
+        year: 2017,
+        meal: "dinner",
+        alt: "Whole fried fish tossed in a spicy garlic-chilli sauce with onions and green chillies"
+      },
+      {
+        type: "image",
+        src: "assets/food/whole-lobster-spicy-prawn-topping-sandys-tower-odisha.jpg",
+        place: "Sandy's Tower, Odisha",
+        year: 2017,
+        meal: "dinner",
+        alt: "Whole grilled lobster topped with spicy stir-fried prawns, served on a bed of sliced cucumber and tomato"
+      },
+      {
+        type: "image",
+        src: "assets/food/mutton-curry-chilli-chicken-naan-kenilworth-park-street.jpg",
+        place: "Kenilworth, Park Street, Kolkata",
+        year: 2016,
+        meal: "dinner",
+        alt: "Mutton curry and chilli chicken served with tandoori naan and roti"
+      },
+      {
+        type: "image",
         src: "assets/food/grilled-chicken-rice-salad-hotel-viva-siem-reap.jpg",
         place: "Hotel Viva, Siem Reap, Cambodia",
         year: 2016,
@@ -1120,6 +1207,14 @@ const SITE_DATA = {
       }
     ],
     "Boozing": [
+      {
+        type: "image",
+        src: "assets/food/cocktails-mini-chocolate-cakes-liqua-salt-lake.jpg",
+        place: "Liqua, Salt Lake, Kolkata",
+        year: 2016,
+        meal: "boozing",
+        alt: "A margarita, an iced tea cocktail, and a mojito served alongside mini chocolate cakes at a rooftop bar"
+      },
       {
         type: "image",
         src: "assets/food/tequila-shots-street-vendor-pantai-cenang-langkawi.jpg",
